@@ -3,6 +3,50 @@
 
 
     
+  <url>
+    <loc>http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
+    <lastmod>2018-03-03T09:56:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>绑定博客到自己的Godaddy域名</title>
+        <pubTime>2017-02-10T11:44:52.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>coding.net</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/21/static-generator-compare-site/</loc>
+    <lastmod>2018-03-03T09:52:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>一个静态网站生成工具的对比网站 - Static Generator</title>
+        <pubTime>2017-02-21T07:42:17.000Z</pubTime>
+        
+        <tag>staticgen</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.itvincent.net/2018/03/02/fast-delete/</loc>
@@ -210,26 +254,6 @@
 
     
   <url>
-    <loc>http://www.itvincent.net/2017/02/21/static-generator-compare-site/</loc>
-    <lastmod>2017-02-21T07:43:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>一个静态网站生成工具的对比网站 - Static Generator</title>
-        <pubTime>2017-02-21T07:42:17.000Z</pubTime>
-        
-        <tag>staticgen</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
     <lastmod>2017-02-17T12:24:45.000Z</lastmod>
     <data>
@@ -280,30 +304,6 @@
         <tag>hexo</tag>
          
         <tag>github</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
-    <lastmod>2017-02-17T10:01:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>绑定博客到自己的Godaddy域名</title>
-        <pubTime>2017-02-10T11:44:52.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
-        <tag>coding.net</tag>
          
          
            

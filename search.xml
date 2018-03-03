@@ -491,7 +491,7 @@
       <title><![CDATA[一个静态网站生成工具的对比网站 - Static Generator]]></title>
       <url>http://www.itvincent.net/2017/02/21/static-generator-compare-site/</url>
       <content type="html"><![CDATA[<p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">https://www.staticgen.com/</a> 是一个静态网站生成器的对比网站，有需要制作一个静态网页的朋友可以在上面找到丰富的项目。</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-21/68608335-file_1487648369707_12a0a.png" alt=""></p>
+<p><img src="http://ojicajn2x.bkt.clouddn.com/static-gen-01.jpg" alt=""></p>
 <a id="more"></a>
 <ul>
 <li>Jekyll、Hugo、Hexo是用来制作<strong>博客类</strong>站点的</li>
@@ -520,7 +520,7 @@
       <content type="html"><![CDATA[<blockquote>
 <p>买了个自己的域名，想把Github Pages绑定到这个域名下。结合了网上的文章及Github Pages的帮助文档，整理出下面的完整设置方式。</p>
 </blockquote>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-17/62145737-file_1487325408987_12b75.png" alt="godaddy"></p>
+<p><img src="http://ojicajn2x.bkt.clouddn.com/godaddy-01.jpg" alt="godaddy"></p>
 <a id="more"></a>
 <h1><span id="github上设置">Github上设置</span></h1><p>首先要在Github Pages的仓库上增加一个名叫<code>CNAME</code>的文件，我们可以用我们hexo项目的source目录下增加，内容为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">example.com</div></pre></td></tr></table></figure>
