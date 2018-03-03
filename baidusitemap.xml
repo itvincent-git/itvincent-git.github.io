@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://www.itvincent.net/2018/03/02/fast-delete/</loc>
+    <lastmod>2018-03-02T11:30:35.789Z</lastmod>
+    <data>
+        <display>
+        <title>FastDelete-Windows下快速删除文件夹的工具</title>
+        <pubTime>2018-03-02T11:25:49.000Z</pubTime>
+        
+        <tag>nodejs</tag>
+         
+         
+           
+             
+              <breadCrumb title="windows" url="http://www.itvincent.net/categories/windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/28/github-404/</loc>
+    <lastmod>2018-02-03T03:23:09.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何自定义Github Pages的404页面</title>
+        <pubTime>2017-01-28T12:18:11.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="github" url="http://www.itvincent.net/categories/github/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/03/28/protobuf-java-android-guildline/</loc>
+    <lastmod>2018-02-03T03:21:35.510Z</lastmod>
+    <data>
+        <display>
+        <title>Protobuf在Android下的使用说明</title>
+        <pubTime>2017-03-28T14:06:12.000Z</pubTime>
+        
+        <tag>protobuf</tag>
+         
+         
+           
+             
+              <breadCrumb title="protobuf" url="http://www.itvincent.net/categories/protobuf/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/04/04/protobuf-principle/</loc>
+    <lastmod>2018-01-20T11:58:40.269Z</lastmod>
+    <data>
+        <display>
+        <title>Protobuf原理分析</title>
+        <pubTime>2017-04-04T09:41:19.000Z</pubTime>
+        
+        <tag>protobuf</tag>
+         
+         
+           
+             
+              <breadCrumb title="protobuf" url="http://www.itvincent.net/categories/protobuf/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/11/28/gradle-sync-fail/</loc>
+    <lastmod>2018-01-20T11:56:35.872Z</lastmod>
+    <data>
+        <display>
+        <title>Android gradle.zip文件下载失败</title>
+        <pubTime>2017-11-27T16:00:00.000Z</pubTime>
+        
+        <tag>gradle</tag>
+         
+         
+           
+             
+              <breadCrumb title="gradle" url="http://www.itvincent.net/categories/gradle/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/09/12/protobuf-gradle-plugin/</loc>
+    <lastmod>2017-09-12T06:55:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用Protobuf Gradle Plugin创建 Protobuf-Lite</title>
+        <pubTime>2017-09-12T06:36:09.000Z</pubTime>
+        
+        <tag>protobuf</tag>
+         
+         
+           
+             
+              <breadCrumb title="protobuf" url="http://www.itvincent.net/categories/protobuf/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/04/26/android-rename-packagename/</loc>
+    <lastmod>2017-05-02T07:14:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android更改packageName包名</title>
+        <pubTime>2017-04-26T10:35:45.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.itvincent.net/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/03/07/gradle-dependencies-tree/</loc>
+    <lastmod>2017-03-07T10:04:23.000Z</lastmod>
+    <data>
+        <display>
+        <title>Gradle中显示包依赖树</title>
+        <pubTime>2017-03-07T10:02:34.000Z</pubTime>
+        
+        <tag>gradle</tag>
+         
+         
+           
+             
+              <breadCrumb title="gradle" url="http://www.itvincent.net/categories/gradle/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/24/svn-ignore/</loc>
+    <lastmod>2017-02-24T05:25:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>Svn Ignore的使用方法</title>
+        <pubTime>2017-02-24T05:21:17.000Z</pubTime>
+        
+        <tag>svn</tag>
+         
+         
+           
+             
+              <breadCrumb title="svn" url="http://www.itvincent.net/categories/svn/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/01/freeline-guide/</loc>
+    <lastmod>2017-02-21T12:32:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Freeline使用指南</title>
+        <pubTime>2017-01-01T07:00:00.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>freeline</tag>
+         
+        <tag>构建</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.itvincent.net/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/21/static-generator-compare-site/</loc>
+    <lastmod>2017-02-21T07:43:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>一个静态网站生成工具的对比网站 - Static Generator</title>
+        <pubTime>2017-02-21T07:42:17.000Z</pubTime>
+        
+        <tag>staticgen</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
+    <lastmod>2017-02-17T12:24:45.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何使用Jekyll和github Pages搭建博客</title>
+        <pubTime>2016-12-15T10:50:17.000Z</pubTime>
+        
+        <tag>jekyll</tag>
+         
+         
+           
+             
+              <breadCrumb title="jekyll" url="http://www.itvincent.net/categories/jekyll/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/09/qiniu-mardown-image/</loc>
+    <lastmod>2017-02-17T12:16:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用七牛云存储Markdown用的图片</title>
+        <pubTime>2017-01-09T07:00:00.000Z</pubTime>
+        
+        <tag>markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="markdown" url="http://www.itvincent.net/categories/markdown/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/20/install-hexo-blog/</loc>
+    <lastmod>2017-02-17T12:14:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>安装Hexo博客</title>
+        <pubTime>2017-01-20T10:20:07.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
+    <lastmod>2017-02-17T10:01:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>绑定博客到自己的Godaddy域名</title>
+        <pubTime>2017-02-10T11:44:52.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>coding.net</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/06/hexo-blog-baidu-google-seo/</loc>
+    <lastmod>2017-02-14T10:09:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>让Hexo站点在百度和Google中被搜索到</title>
+        <pubTime>2017-02-06T09:58:38.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>seo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/06/hexo-deploy-github-coding/</loc>
+    <lastmod>2017-02-09T12:22:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo站点部署到Github Pages和coding.net</title>
+        <pubTime>2017-02-06T09:54:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2016/12/15/markdown-guide/</loc>
+    <lastmod>2017-02-08T07:51:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用Sublime Text写markdown</title>
+        <pubTime>2016-12-15T13:50:17.000Z</pubTime>
+        
+        <tag>markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="markdown" url="http://www.itvincent.net/categories/markdown/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2016/12/27/hashmap-arraymap/</loc>
+    <lastmod>2017-02-08T07:50:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>Android的HashMap和ArrayMap对比</title>
+        <pubTime>2016-12-27T07:00:00.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.itvincent.net/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/13/android-ndk-old-version/</loc>
+    <lastmod>2017-02-08T07:48:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何下载旧的Android NDK版本</title>
+        <pubTime>2017-01-13T06:54:16.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>ndk</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.itvincent.net/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/25/hexo-setting-blog/</loc>
+    <lastmod>2017-02-08T07:45:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>构建一个自己的Hexo博客</title>
+        <pubTime>2017-01-25T10:20:07.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+</urlset>
