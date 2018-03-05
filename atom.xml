@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.itvincent.net/"/>
-  <updated>2018-03-02T11:30:35.789Z</updated>
+  <updated>2018-03-05T07:21:37.577Z</updated>
   <id>http://www.itvincent.net/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.itvincent.net/2018/03/02/fast-delete/"/>
     <id>http://www.itvincent.net/2018/03/02/fast-delete/</id>
     <published>2018-03-02T11:25:49.000Z</published>
-    <updated>2018-03-02T11:30:35.789Z</updated>
+    <updated>2018-03-05T07:21:37.577Z</updated>
     
     <content type="html"><![CDATA[<p>FastDelete是一个快速删除文件夹的工具，基于nodejs里文件操作的强大性能。特别是文件夹里存在大量小文件的情况下，FastDelete能够比Windows的删除操作快上十倍。</p><blockquote><p>最近项目发展得很快，代码越来越多，加上<strong>AndroidStudio</strong>构建时会在<strong>build</strong>目录下生成大量文件。有时需要清理一下<strong>build</strong>目录，或者把某些分支代码目录删除掉，节省宝贵的硬盘空间。不过问题来了，Windows下对于这种大量小文件的操作非常慢，现在删除一个分支竟然要2-3分钟的时间才行，所以才萌生了这个工具的想法。</p><p>一开始用命令行执行还是稍复杂了点，后来加上了<strong>文件夹右键菜单</strong>后，删除得更爽快了。</p></blockquote><h4><span id="使用前提">使用前提</span></h4><p>安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a></p><h4><span id="下载代码">下载代码</span></h4><p><a href="https://github.com/itvincent-git/fast-delete/archive/1.0.0.zip" target="_blank" rel="noopener">点击下载zip</a></p><p><a href="https://github.com/itvincent-git/fast-delete" target="_blank" rel="noopener">进入github下载</a></p><h4><span id="首次使用">首次使用</span></h4><p>执行 <code>install.bat</code>批处理文件。</p><ul><li>它会下载依赖包到本地的<strong>node_modules</strong>目录下</li><li>自动生成并注册reg文件，弹窗中点击“是”添加上右键菜单</li></ul><h4><span id="右键菜单运行">右键菜单运行</span></h4><ul><li><p>在文件夹的右键菜单中，点击<strong>极速删除</strong>，即可删除该目录</p><p><img src="http://upload-images.jianshu.io/upload_images/8375846-09eab080a9c642bf?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p></li></ul><h4><span id="命令行运行">命令行运行</span></h4><ul><li>在cmd中执行<code>node delete.js &lt;deleteDir&gt;</code></li></ul>]]></content>
     

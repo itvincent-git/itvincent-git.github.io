@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.itvincent.net/2018/03/02/fast-delete/</loc>
+    
+    <lastmod>2018-03-05T07:21:37.577Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
     
     <lastmod>2018-03-03T09:56:00.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://www.itvincent.net/tags/index.html</loc>
     
     <lastmod>2018-03-03T09:10:00.017Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.itvincent.net/2018/03/02/fast-delete/</loc>
-    
-    <lastmod>2018-03-02T11:30:35.789Z</lastmod>
     
   </url>
   
