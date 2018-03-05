@@ -6,23 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.itvincent.net">
-  <title>Hexo站点部署到Github Pages和coding.net | itVincent的博客</title>
+  <title>Gitment评论系统介绍 | itVincent的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Github Pages屏蔽了Baidu的爬虫，百度搜索引擎没法抓取到数据。coding.net也提供了类似Github Pages的功能，Baidu爬虫可以抓到数据，Google也能抓到数据。hexo支持部署到多个仓库的能力，下面我们就来操作一下。">
-<meta name="keywords" content="hexo,Github,GithubPages,coding.net">
+  <meta name="description" content="前言最近各种博客评论模块相继暂定服务，首先是多说，然后网易云跟贴。剩下的选择有Disqus，不过墙内经常是连接不上，还有一个畅言没用过，不过需要是一个备案，并且部署到github pages上的站点过不了审核。 看到网上有说Gitment这样一个评论工具，原理是使用了Github Issue的提问题功能。相当于每一条博客对应上一个issue，一个评论相当于issue的回复，这种解决问题的方式十分讨">
+<meta name="keywords" content="hexo, gitment">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo站点部署到Github Pages和coding.net">
-<meta property="og:url" content="http://www.itvincent.net/2017/02/06/hexo-deploy-github-coding/index.html">
+<meta property="og:title" content="Gitment评论系统介绍">
+<meta property="og:url" content="http://www.itvincent.net/2018/03/05/gitment-intro/index.html">
 <meta property="og:site_name" content="itVincent的博客">
-<meta property="og:description" content="Github Pages屏蔽了Baidu的爬虫，百度搜索引擎没法抓取到数据。coding.net也提供了类似Github Pages的功能，Baidu爬虫可以抓到数据，Google也能抓到数据。hexo支持部署到多个仓库的能力，下面我们就来操作一下。">
+<meta property="og:description" content="前言最近各种博客评论模块相继暂定服务，首先是多说，然后网易云跟贴。剩下的选择有Disqus，不过墙内经常是连接不上，还有一个畅言没用过，不过需要是一个备案，并且部署到github pages上的站点过不了审核。 看到网上有说Gitment这样一个评论工具，原理是使用了Github Issue的提问题功能。相当于每一条博客对应上一个issue，一个评论相当于issue的回复，这种解决问题的方式十分讨">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/42704688-file_1486373356226_139a3.png">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/624973-file_1486374591691_8ce.png">
-<meta property="og:updated_time" content="2017-02-09T12:22:53.000Z">
+<meta property="og:updated_time" content="2018-03-05T09:28:28.514Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo站点部署到Github Pages和coding.net">
-<meta name="twitter:description" content="Github Pages屏蔽了Baidu的爬虫，百度搜索引擎没法抓取到数据。coding.net也提供了类似Github Pages的功能，Baidu爬虫可以抓到数据，Google也能抓到数据。hexo支持部署到多个仓库的能力，下面我们就来操作一下。">
-<meta name="twitter:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/42704688-file_1486373356226_139a3.png">
+<meta name="twitter:title" content="Gitment评论系统介绍">
+<meta name="twitter:description" content="前言最近各种博客评论模块相继暂定服务，首先是多说，然后网易云跟贴。剩下的选择有Disqus，不过墙内经常是连接不上，还有一个畅言没用过，不过需要是一个备案，并且部署到github pages上的站点过不了审核。 看到网上有说Gitment这样一个评论工具，原理是使用了Github Issue的提问题功能。相当于每一条博客对应上一个issue，一个评论相当于issue的回复，这种解决问题的方式十分讨">
   
     <link rel="alternative" href="/atom.xml" title="itVincent的博客" type="application/atom+xml">
   
@@ -187,50 +184,31 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo-deploy-github-coding" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-gitment-intro" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo站点部署到Github Pages和coding.net
+      Gitment评论系统介绍
     </h1>
   
 
         
-        <a href="/2017/02/06/hexo-deploy-github-coding/" class="archive-article-date">
-  	<time datetime="2017-02-06T09:54:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-06</time>
+        <a href="/2018/03/05/gitment-intro/" class="archive-article-date">
+  	<time datetime="2018-03-05T09:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>Github Pages屏蔽了Baidu的爬虫，百度搜索引擎没法抓取到数据。coding.net也提供了类似Github Pages的功能，Baidu爬虫可以抓到数据，Google也能抓到数据。hexo支持部署到多个仓库的能力，下面我们就来操作一下。</p>
-</blockquote>
-<a id="more"></a>
-<h1><span id="申请codingnet">申请coding.net</span></h1><p>申请一个coding.net的账号，然后创建一个跟账号一致的仓库，这点跟Github Pages相似。</p>
-<h1><span id="git-ssh认证">Git SSH认证</span></h1><h2><span id="生成密钥">生成密钥</span></h2><p>首先本地需要安装git客户端，然后需要生成<code>id_rsa</code>(私钥)和<code>id_rsa.pub</code>(公钥)。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;yourmail@domain.com&quot;</div></pre></td></tr></table></figure>
-<p>可以一路按enter键，然后可在<code>~/.ssh/</code>下找到上面的2个文件。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-add</div></pre></td></tr></table></figure>
-<h2><span id="记录密钥">记录密钥</span></h2><p>在coding.net的<code>个人设置 》 SSH公钥</code> 添加这个公钥，如下图：</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/42704688-file_1486373356226_139a3.png" alt=""></p>
-<p>之后执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@git.coding.net</div></pre></td></tr></table></figure>
-<p>提示如下就证明OK了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hello &lt;Your Name&gt;! You&apos;ve connected to Coding.net via SSH successfully!</div></pre></td></tr></table></figure>
-<p><em>如果github上也是这个邮箱，那就不用再生成一次了，否则按照另外一个域名操作一次。</em></p>
-<p>在github上<code>个人设置 》 SSH and GPG keys 》new SSH key</code>添加公钥，如下图：<br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/624973-file_1486374591691_8ce.png" alt=""></p>
-<h1><span id="安装hexo-deployer-git">安装hexo-deployer-git</span></h1><p>用于hexo部署到git的插件，如果之前安装过就不需要了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<h1><span id="一次部署到github-pages和codingnet">一次部署到Github Pages和coding.net</span></h1><p>修改hexo根目录的配置文件<code>_config.yml</code>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: </div><div class="line">    github: https://github.com/&lt;your github name&gt;/&lt;your repo&gt;.github.io.git</div><div class="line">    coding: git@git.coding.net:&lt;your github name&gt;/&lt;your repo&gt;.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>这里github好像只能是https，ssh是不行的，但是coding.net的ssh没有问题。</p>
-<h1><span id="执行部署">执行部署</span></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d -g</div></pre></td></tr></table></figure>
-<p>看到两个平台上的日志证明就OK了。</p>
+        <h3><span id="前言">前言</span></h3><p>最近各种博客评论模块相继暂定服务，首先是多说，然后网易云跟贴。剩下的选择有Disqus，不过墙内经常是连接不上，还有一个畅言没用过，不过需要是一个备案，并且部署到github pages上的站点过不了审核。</p>
+<p>看到网上有说Gitment这样一个评论工具，原理是使用了Github Issue的提问题功能。相当于每一条博客对应上一个issue，一个评论相当于issue的回复，这种解决问题的方式十分讨巧，要点赞！</p>
+<h3><span id="转发">转发</span></h3><p>具体的使用方式我就不搬砖了，提供2个链接参考一下。</p>
+<p><a href="http://ihtc.cc/2018/02/25/2018-02-25%20_Gitment%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E6%8E%A5%E5%85%A5%E8%B8%A9%E5%9D%91%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Gitment评论功能接入踩坑教程</a></p>
+<p><a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">Gitment：使用 GitHub Issues 搭建评论系统</a></p>
 
       
 
@@ -248,7 +226,7 @@ var _hmt = _hmt || [];
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">gitment</a>
         		</li>
       		
 		</ul>
@@ -315,7 +293,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.itvincent.net/2017/02/06/hexo-deploy-github-coding/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.itvincent.net/2018/03/05/gitment-intro/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -329,18 +307,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/02/06/hexo-blog-baidu-google-seo/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          让Hexo站点在百度和Google中被搜索到
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/01/28/github-404/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何自定义Github Pages的404页面</div>
+    <a href="/2018/03/02/fast-delete/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">FastDelete-Windows下快速删除文件夹的工具</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -367,7 +336,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">申请coding.net</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">Git SSH认证</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.1.</span> <span class="toc-text">生成密钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-number">2.2.</span> <span class="toc-text">记录密钥</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">安装hexo-deployer-git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">一次部署到Github Pages和coding.net</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">执行部署</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">转发</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -392,7 +361,7 @@ var _hmt = _hmt || [];
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "Hexo站点部署到Github Pages和coding.net",
+  id: "Gitment评论系统介绍",
   owner: 'itvincent-git',
   repo: 'myblog',
   oauth: {

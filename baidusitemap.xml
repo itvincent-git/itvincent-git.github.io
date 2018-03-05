@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://www.itvincent.net/2018/03/05/gitment-intro/</loc>
+    <lastmod>2018-03-05T09:28:28.514Z</lastmod>
+    <data>
+        <display>
+        <title>Gitment评论系统介绍</title>
+        <pubTime>2018-03-05T09:12:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>gitment</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.itvincent.net/2018/03/02/fast-delete/</loc>
-    <lastmod>2018-03-05T07:21:37.577Z</lastmod>
+    <lastmod>2018-03-05T09:11:29.000Z</lastmod>
     <data>
         <display>
         <title>FastDelete-Windows下快速删除文件夹的工具</title>
