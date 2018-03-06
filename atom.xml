@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.itvincent.net/"/>
-  <updated>2018-03-05T09:28:28.514Z</updated>
+  <updated>2018-03-06T13:17:48.018Z</updated>
   <id>http://www.itvincent.net/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unused Resource Explorer——Android无用资源浏览器</title>
+    <link href="http://www.itvincent.net/2018/03/06/unused-resource-explorer/"/>
+    <id>http://www.itvincent.net/2018/03/06/unused-resource-explorer/</id>
+    <published>2018-03-06T13:17:48.000Z</published>
+    <updated>2018-03-06T13:17:48.018Z</updated>
+    
+    <content type="html"><![CDATA[<h3><span id="前言">前言</span></h3><ul><li>全自动化的清理脚本，容易会出现多删除了资源的情况</li><li>升级了gradle版本后，原来一些根据lint分析的工具出现了问题</li></ul><h3><span id="想要的工具">想要的工具</span></h3><ul><li>能对扫描出来的无用资源进行浏览，图片能够预览</li><li>能对扫描出来的无用资源进行分类</li><li>可自动清理，也可手动个别清理</li></ul><a id="more"></a><h4><span id="安装插件">安装插件</span></h4><ul><li><p><a href="http://ojicajn2x.bkt.clouddn.com/18-03-06-unused-resource-explorer.jar" target="_blank" rel="noopener">下载插件文件</a></p></li><li><p><a href="https://www.jetbrains.com/help/idea/installing-a-plugin-from-disk.html" target="_blank" rel="noopener">使用本地文件安装方式安装到AndroidStudio</a></p><blockquote><p>IntelliJ IDEA 插件文件是一个存档文件：ZIP 或 JAR。在安装之前，您不需要解压缩它。您应该照原样使用它。<br>如果您的计算机上有可用的插件文件，您可以安装下述步骤来安装它：</p><ol><li>打开 “设置/首选项” 对话框（例如：Ctrl+Alt+S）。</li><li>在左侧窗格中，选择 “插件”。</li><li>在右侧部分的 “插件” 页上，单击 “从磁盘安装插件”。</li><li>在打开的对话框中， 选择插件存档文件，然后单击”确定”。</li><li>在 “设置/首选项” 对话框中，单击 “应用” 或 “确定”。</li><li>如果建议，重新启动 IntelliJ IDEA。</li></ol></blockquote></li></ul><h3><span id="工具使用">工具使用</span></h3><h4><span id="执行android-lint">执行Android Lint</span></h4><ul><li>首先第一步执行<strong>lint</strong>命令来生成分析报告xml文件。</li><li>打开<strong>Android Studio</strong>的<strong>Gradle Projects</strong>面板，选择一个module下的<strong>lint</strong>命令，双击执行</li></ul><p><img src="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-2.png" alt=""></p><ul><li><p>Gradle执行成功后，会生成如下文件：<strong><module>/build/outputs/lint-results-debug.xml</module></strong>，记下这个文件的位置，下面会用到。</p><p>​</p></li></ul><h4><span id="使用unused-resource-explorer浏览lintxml文件">使用Unused Resource Explorer浏览lint.xml文件</span></h4><ul><li><strong>Choose lint report xml</strong>：选择刚才生成出来的<strong>lint-results-debug.xml</strong>或<strong>lint-<xxx>.xml</xxx></strong>文件，选择完后，把扫描出来的无用资源显示在下面的面板上</li><li><strong>Open</strong> ：选择一个列表中的资源，点击open在编辑器面板打开这个文件</li><li><strong>Delete</strong>：选择一个列表中的资源，点击Delete删除它</li><li><strong>Clean</strong>：清理列表中的<strong>layout/anim/drawble/</strong>下的资源，清理列表中<strong>.png/.jpg</strong>为后缀的资源</li></ul><p><img src="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-4.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;全自动化的清理脚本，容易会出现多删除了资源的情况&lt;/li&gt;
+&lt;li&gt;升级了gradle版本后，原来一些根据lint分析的工具出现了问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;想要的工具&quot;&gt;&lt;a href=&quot;#想要的工具&quot; class=&quot;headerlink&quot; title=&quot;想要的工具&quot;&gt;&lt;/a&gt;想要的工具&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;能对扫描出来的无用资源进行浏览，图片能够预览&lt;/li&gt;
+&lt;li&gt;能对扫描出来的无用资源进行分类&lt;/li&gt;
+&lt;li&gt;可自动清理，也可手动个别清理&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://www.itvincent.net/categories/Android/"/>
+    
+    
+      <category term="Intellij Plugin" scheme="http://www.itvincent.net/tags/Intellij-Plugin/"/>
+    
+  </entry>
   
   <entry>
     <title>Gitment评论系统介绍</title>
@@ -530,29 +560,6 @@
       <category term="freeline" scheme="http://www.itvincent.net/tags/freeline/"/>
     
       <category term="构建" scheme="http://www.itvincent.net/tags/%E6%9E%84%E5%BB%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android的HashMap和ArrayMap对比</title>
-    <link href="http://www.itvincent.net/2016/12/27/hashmap-arraymap/"/>
-    <id>http://www.itvincent.net/2016/12/27/hashmap-arraymap/</id>
-    <published>2016-12-27T07:00:00.000Z</published>
-    <updated>2017-02-08T07:50:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1><span id="原理">原理</span></h1><hr><p>原理就不详细说了，看看这个文章：<a href="https://www.youtube.com/watch?v=ORgucLTtTDI" target="_blank" rel="noopener">Fun with ArrayMaps (Android Performance Patterns Season 3 ep1)</a><br>不过做完我下面的测试后，结论有所不同。<br><a id="more"></a></p><h1><span id="做了个性能测试">做了个性能测试</span></h1><hr><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">testHashMap</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">long</span> start = System.currentTimeMillis();</div><div class="line">    Map&lt;Integer, Integer&gt; m = <span class="keyword">new</span> HashMap();</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">200000</span>; i++)&#123;</div><div class="line">        m.put(i, i + <span class="number">100</span>);</div><div class="line">    &#125;</div><div class="line">    Log.i(<span class="string">"Map"</span>, <span class="string">"testHashMap 1 time used "</span> + (System.currentTimeMillis() - start));</div><div class="line"></div><div class="line">    start = System.currentTimeMillis();</div><div class="line">    m = <span class="keyword">new</span> HashMap();</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">200000</span>; i++)&#123;</div><div class="line">        m.get(i);</div><div class="line">    &#125;</div><div class="line">    Log.i(<span class="string">"Map"</span>, <span class="string">"testHashMap 2 time used "</span> + (System.currentTimeMillis() - start));</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">testArrayMap</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">long</span> start = System.currentTimeMillis();</div><div class="line">    Map&lt;Integer, Integer&gt; m = <span class="keyword">new</span> ArrayMap&lt;&gt;();</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">200000</span>; i++)&#123;</div><div class="line">        m.put(i , i + <span class="number">100</span>);</div><div class="line">    &#125;</div><div class="line">    Log.i(<span class="string">"Map"</span>, <span class="string">"testArrayMap 1 time used "</span> + (System.currentTimeMillis() - start));</div><div class="line"></div><div class="line">    start = System.currentTimeMillis();</div><div class="line">    m = <span class="keyword">new</span> ArrayMap&lt;&gt;();</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">200000</span>; i++)&#123;</div><div class="line">        m.get(i);</div><div class="line">    &#125;</div><div class="line">    Log.i(<span class="string">"Map"</span>, <span class="string">"testArrayMap 2 time used "</span> + (System.currentTimeMillis() - start));</div><div class="line">&#125;</div></pre></td></tr></table></figure><h1><span id="测试结果">测试结果</span></h1><hr><p>HashMap平均耗时363ms, ArrayMap平均耗时271ms，ArrayMap快了25%。</p><p>HashMap增加内存15M，ArrayMap增加内存12M，ArrayMap少增加20%。</p><p>HashMap『get()』查询耗时45ms，ArrayMap『get()』查询耗时48ms，ArrayMap慢10%左右</p><h1><span id="加大循环次数">加大循环次数</span></h1><hr><p>把循环次数调大，大到100万，结果耗时内存上ArrayMap更加领先，<strong>『get()』的耗时ArrayMap反超了HashMap</strong></p><h1><span id="hashmap增加初始化容量">HashMap增加初始化容量</span></h1><hr><p>HashMap构造函数加入初始化的容量后，速度有大量提升，不过仍然比不上ArrayMap。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Map&lt;Integer, Integer&gt; m = <span class="keyword">new</span> HashMap(<span class="number">1000000</span>);</div></pre></td></tr></table></figure></p><h1><span id="结论">结论</span></h1><hr><p>测试结果比文章中说的有不同，除了查询时量少的情况下ArrayMap比HashMap慢，数据量大时ArrayMap更快。<code>put()</code>的耗时、内存上面ArrayMap是全面优势。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot; title=&quot;原理&quot;&gt;&lt;/a&gt;原理&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;原理就不详细说了，看看这个文章：&lt;a href=&quot;https://www.youtube.com/watch?v=ORgucLTtTDI&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Fun with ArrayMaps (Android Performance Patterns Season 3 ep1)&lt;/a&gt;&lt;br&gt;不过做完我下面的测试后，结论有所不同。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="android" scheme="http://www.itvincent.net/categories/android/"/>
-    
-    
-      <category term="android" scheme="http://www.itvincent.net/tags/android/"/>
     
   </entry>
   
