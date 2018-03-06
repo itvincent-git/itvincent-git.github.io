@@ -54,12 +54,14 @@
       
         <categories>
             
-            <category> Android </category>
+            <category> android </category>
             
         </categories>
         
         
         <tags>
+            
+            <tag> android </tag>
             
             <tag> Intellij Plugin </tag>
             
