@@ -18,7 +18,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-2.png">
 <meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-4.png">
-<meta property="og:updated_time" content="2018-03-06T13:38:53.000Z">
+<meta property="og:updated_time" content="2018-03-07T10:27:41.789Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unused Resource Explorer——Android无用资源浏览器">
 <meta name="twitter:description" content="前言 全自动化的清理脚本，容易会出现多删除了资源的情况 升级了gradle版本后，原来一些根据lint分析的工具出现了问题  想要的工具 能对扫描出来的无用资源进行浏览，图片能够预览 能对扫描出来的无用资源进行分类 可自动清理，也可手动个别清理">
@@ -241,6 +241,10 @@ var _hmt = _hmt || [];
 <p><img src="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-2.png" alt=""></p>
 <ul>
 <li><p>Gradle执行成功后，会生成如下文件：<strong><module>/build/outputs/lint-results-debug.xml</module></strong>，记下这个文件的位置，下面会用到。</p>
+<blockquote>
+<p>如果项目比较大，lint执行全部的任务会耗时很久，其实我们只需要检查UnusedResources，没必要所有类型的问题都检查，通过在<strong><module>.gradle</module></strong>文件中添加如下配置，即可只检查UnusedResources，大大提高速度。</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt; android &#123;</div><div class="line">&gt;     lintOptions &#123;</div><div class="line">&gt;         check <span class="string">"UnusedResources"</span></div><div class="line">&gt;     &#125;</div><div class="line">&gt; &#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
 <p>​</p>
 </li>
 </ul>
@@ -530,10 +534,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Intellij Plugin</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jekyll</a>
               </li>
              
@@ -590,7 +590,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">hexo gitment</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">gitment</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Intellij plugin</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Intellij Plugin</a>
               </li>
             
             <div class="clearfix"></div>

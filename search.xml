@@ -40,6 +40,10 @@
 <p><img src="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-2.png" alt=""></p>
 <ul>
 <li><p>Gradle执行成功后，会生成如下文件：<strong><module>/build/outputs/lint-results-debug.xml</module></strong>，记下这个文件的位置，下面会用到。</p>
+<blockquote>
+<p>如果项目比较大，lint执行全部的任务会耗时很久，其实我们只需要检查UnusedResources，没必要所有类型的问题都检查，通过在<strong><module>.gradle</module></strong>文件中添加如下配置，即可只检查UnusedResources，大大提高速度。</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt; android &#123;</div><div class="line">&gt;     lintOptions &#123;</div><div class="line">&gt;         check <span class="string">"UnusedResources"</span></div><div class="line">&gt;     &#125;</div><div class="line">&gt; &#125;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
+</blockquote>
 <p>​</p>
 </li>
 </ul>
