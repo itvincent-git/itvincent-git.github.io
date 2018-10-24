@@ -5,10 +5,10 @@
     
   <url>
     <loc>http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
-    <lastmod>2018-10-24T11:31:06.817Z</lastmod>
+    <lastmod>2018-10-24T14:02:17.993Z</lastmod>
     <data>
         <display>
-        <title>Kotlin如何避免!!</title>
+        <title>Kotlin如何避免“!!”（非空断言）</title>
         <pubTime>2018-10-24T11:27:07.000Z</pubTime>
         
         <tag>kotlin</tag>

@@ -191,7 +191,7 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/24/kotlin-no-double-exclamation/">Kotlin如何避免!!</a>
+      <a class="article-title" href="/2018/10/24/kotlin-no-double-exclamation/">Kotlin如何避免“!!”（非空断言）</a>
     </h1>
   
 
@@ -205,7 +205,8 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p>当我们把Java自动转成Kotlin的时候，代码里会出现很多非空断言<code>!!</code>。或者某些场景下因为IDE提示或编译错误，也让我们自己加上了一些<code>!!</code>。<br>但使用<code>!!</code>的后果是有可能抛出<code>IllegalArgumentException：Parameter specified as non-null is null</code>。</p>
-<h3 id="如何避免-？"><a href="#如何避免-？" class="headerlink" title="如何避免!!？"></a>如何避免<code>!!</code>？</h3><h4 id="使用-let-apply-run"><a href="#使用-let-apply-run" class="headerlink" title="使用?.let/?.apply/?.run"></a>使用?.let/?.apply/?.run</h4><p>这种是最常用的方法，也是首选的方法。但当有多个变量同时要判空时，或者需要处理为null时的逻辑，这种方式稍微有一点麻烦，下面会讲到一些新的方式。</p>
+<h3 id="如何避免-？"><a href="#如何避免-？" class="headerlink" title="如何避免!!？"></a>如何避免<code>!!</code>？</h3><h4 id="使用-let-apply-run"><a href="#使用-let-apply-run" class="headerlink" title="使用?.let/?.apply/?.run"></a>使用?.let/?.apply/?.run</h4><p>这种是最常用的方法，也是<strong>首选的方法</strong>。但当有多个变量同时要判空时，或者需要处理为null时的逻辑，这种方式稍微有一点麻烦，下面会讲到一些新的方式。</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">disposable?.let &#123;</div><div class="line">    <span class="keyword">if</span> (!it.isDisposed) it.dispose()</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="用Val替代Var"><a href="#用Val替代Var" class="headerlink" title="用Val替代Var"></a>用Val替代Var</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mutableString:String? = <span class="literal">null</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">run</span><span class="params">()</span></span> &#123;</div><div class="line">    mutableString = <span class="string">"a"</span></div><div class="line">    printText(mutableString)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">printText</span><span class="params">(text: <span class="type">String</span>)</span></span> &#123;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>此时会报错<code>Smart cast to &#39;String&#39; is impossible, because &#39;multableString&#39; is a mutable property that could have been changed by this time
 :app:compileDebugKotlin FAILED</code>。由于multableString是Var变量，为了避免多线程对变量的修改而出现Null的情况，kotlin从编译上进行了限制。</p>
