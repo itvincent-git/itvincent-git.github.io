@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
+    <lastmod>2018-10-24T11:31:06.817Z</lastmod>
+    <data>
+        <display>
+        <title>Kotlin如何避免!!</title>
+        <pubTime>2018-10-24T11:27:07.000Z</pubTime>
+        
+        <tag>kotlin</tag>
+         
+         
+           
+             
+              <breadCrumb title="kotlin" url="http://www.itvincent.net/categories/kotlin/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.itvincent.net/2018/03/06/unused-resource-explorer/</loc>
     <lastmod>2018-03-07T10:27:41.789Z</lastmod>
     <data>
@@ -367,9 +387,9 @@
         <title>让Hexo站点在百度和Google中被搜索到</title>
         <pubTime>2017-02-06T09:58:38.000Z</pubTime>
         
-        <tag>hexo</tag>
-         
         <tag>seo</tag>
+         
+        <tag>hexo</tag>
          
          
            

@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.itvincent.net">
-  <title>Freeline使用指南 | itVincent的博客</title>
+  <title>Kotlin如何避免!! | itVincent的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="概述Freeline是蚂蚁金服旗下一站式理财平台蚂蚁聚宝团队在Android平台上的量身定做的一个基于动态替换的编译方案，稳定性方面：完善的基线对齐，进程级别异常隔离机制。性能方面：内部采用了类似Facebook的开源工具buck的多工程多任务并发思想, 并对代码及资源编译流程做了深入的性能优化。">
-<meta name="keywords" content="android,freeline,Android Studio,插件,构建">
+  <meta name="description" content="当我们把Java自动转成Kotlin的时候，代码里会出现很多非空断言!!。或者某些场景下因为IDE提示或编译错误，也让我们自己加上了一些!!。但使用!!的后果是有可能抛出IllegalArgumentException：Parameter specified as non-null is null。 如何避免!!？使用?.let/?.apply/?.run这种是最常用的方法，也是首选的方法。但当有">
+<meta name="keywords" content="kotlin,!!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Freeline使用指南">
-<meta property="og:url" content="http://www.itvincent.net/2017/01/01/freeline-guide/index.html">
+<meta property="og:title" content="Kotlin如何避免!!">
+<meta property="og:url" content="http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/index.html">
 <meta property="og:site_name" content="itVincent的博客">
-<meta property="og:description" content="概述Freeline是蚂蚁金服旗下一站式理财平台蚂蚁聚宝团队在Android平台上的量身定做的一个基于动态替换的编译方案，稳定性方面：完善的基线对齐，进程级别异常隔离机制。性能方面：内部采用了类似Facebook的开源工具buck的多工程多任务并发思想, 并对代码及资源编译流程做了深入的性能优化。">
+<meta property="og:description" content="当我们把Java自动转成Kotlin的时候，代码里会出现很多非空断言!!。或者某些场景下因为IDE提示或编译错误，也让我们自己加上了一些!!。但使用!!的后果是有可能抛出IllegalArgumentException：Parameter specified as non-null is null。 如何避免!!？使用?.let/?.apply/?.run这种是最常用的方法，也是首选的方法。但当有">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-02-21T12:32:43.000Z">
+<meta property="og:updated_time" content="2018-10-24T11:31:06.817Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Freeline使用指南">
-<meta name="twitter:description" content="概述Freeline是蚂蚁金服旗下一站式理财平台蚂蚁聚宝团队在Android平台上的量身定做的一个基于动态替换的编译方案，稳定性方面：完善的基线对齐，进程级别异常隔离机制。性能方面：内部采用了类似Facebook的开源工具buck的多工程多任务并发思想, 并对代码及资源编译流程做了深入的性能优化。">
+<meta name="twitter:title" content="Kotlin如何避免!!">
+<meta name="twitter:description" content="当我们把Java自动转成Kotlin的时候，代码里会出现很多非空断言!!。或者某些场景下因为IDE提示或编译错误，也让我们自己加上了一些!!。但使用!!的后果是有可能抛出IllegalArgumentException：Parameter specified as non-null is null。 如何避免!!？使用?.let/?.apply/?.run这种是最常用的方法，也是首选的方法。但当有">
   
     <link rel="alternative" href="/atom.xml" title="itVincent的博客" type="application/atom+xml">
   
@@ -184,53 +184,53 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-freeline-guide" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-kotlin-no-double-exclamation" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Freeline使用指南
+      Kotlin如何避免!!
     </h1>
   
 
         
-        <a href="/2017/01/01/freeline-guide/" class="archive-article-date">
-  	<time datetime="2017-01-01T07:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-01</time>
+        <a href="/2018/10/24/kotlin-no-double-exclamation/" class="archive-article-date">
+  	<time datetime="2018-10-24T11:27:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1><span id="概述">概述</span></h1><p>Freeline是蚂蚁金服旗下一站式理财平台蚂蚁聚宝团队在Android平台上的量身定做的一个基于动态替换的编译方案，稳定性方面：完善的基线对齐，进程级别异常隔离机制。性能方面：内部采用了类似Facebook的开源工具buck的多工程多任务并发思想, 并对代码及资源编译流程做了深入的性能优化。<br><a id="more"></a></p>
-<h1><span id="安装">安装</span></h1><p>详细可以访问<a href="https://github.com/alibaba/freeline" target="_blank" rel="noopener">Freeline主页</a>。</p>
+        <p>当我们把Java自动转成Kotlin的时候，代码里会出现很多非空断言<code>!!</code>。或者某些场景下因为IDE提示或编译错误，也让我们自己加上了一些<code>!!</code>。<br>但使用<code>!!</code>的后果是有可能抛出<code>IllegalArgumentException：Parameter specified as non-null is null</code>。</p>
+<h3><span id="如何避免">如何避免<code>!!</code>？</span></h3><h4><span id="使用letapplyrun">使用?.let/?.apply/?.run</span></h4><p>这种是最常用的方法，也是首选的方法。但当有多个变量同时要判空时，或者需要处理为null时的逻辑，这种方式稍微有一点麻烦，下面会讲到一些新的方式。</p>
+<h4><span id="用val替代var">用Val替代Var</span></h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mutableString:String? = <span class="literal">null</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">run</span><span class="params">()</span></span> &#123;</div><div class="line">    mutableString = <span class="string">"a"</span></div><div class="line">    printText(mutableString)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">printText</span><span class="params">(text: <span class="type">String</span>)</span></span> &#123;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>此时会报错<code>Smart cast to &#39;String&#39; is impossible, because &#39;multableString&#39; is a mutable property that could have been changed by this time
+:app:compileDebugKotlin FAILED</code>。由于multableString是Var变量，为了避免多线程对变量的修改而出现Null的情况，kotlin从编译上进行了限制。</p>
 <ul>
-<li>首先修改gradle项目中顶级目录下的<code>build.gradle</code>，加入freeline的配置:</li>
+<li><p>解决方法1是把var变量改为val变量</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">val</span> mutableString:String = <span class="string">"a"</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">run</span><span class="params">()</span></span> &#123;</div><div class="line">    printText(mutableString)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>解决方法2是写一个新的val变量，将var变量赋值给它，将val作为参数</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">run</span><span class="params">()</span></span> &#123;</div><div class="line">    mutableString = <span class="string">"a"</span></div><div class="line">    <span class="keyword">val</span> string = mutableString ?: <span class="string">""</span></div><div class="line">    printText(string)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">buildscript &#123;</div><div class="line">    repositories &#123;</div><div class="line">        jcenter()</div><div class="line">    &#125;</div><div class="line">    dependencies &#123;</div><div class="line">        classpath <span class="string">'com.antfortune.freeline:gradle:0.8.4'</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>在修改application运行项目下的<code>build.gradle</code>，引用freeline插件:</li>
-</ul>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">apply <span class="string">plugin:</span> <span class="string">'com.antfortune.freeline'</span></div><div class="line"></div><div class="line">android &#123;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>运行命令行，下载freeline插件。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Windows下执行: gradlew initFreeline</div><div class="line">Linux/Mac下执行: ./gradlew initFreeline</div></pre></td></tr></table></figure>
-<p>如果上面的速度太慢的话，国内的用户也可以通过下面的方式提高速度：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gradlew initFreeline -Pmirror</div></pre></td></tr></table></figure>
+<h4><span id=""></span></h4><h4><span id="使用elvis操作符">使用Elvis操作符</span></h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">run</span><span class="params">()</span></span> &#123;</div><div class="line">    multableString = <span class="string">"a"</span></div><div class="line">    printText(multableString ?: <span class="string">""</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4><span id="声明lateinit">声明lateinit</span></h4><p>使用<code>lateinit</code>声明到变量上，表示这个变量延迟初始化，比较适合在<code>Activity.onCreate</code>这种有生命周期的方法里初始化。<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">lateinit <span class="keyword">var</span> mutableString: String</div><div class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</div><div class="line">    multableString = <span class="string">"a"</span></div><div class="line">    printText(mutableString)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <blockquote>
-<p>此时执行如果返回错误<code>Permission Deny</code>，是因为<code>gradlew</code>文件没有设置执行权限，执行下面命令行可增加权限，然后重新运行上面的命令：</p>
+<p>需要注意的是，访问未初始化的 lateinit 修饰的属性会抛出UninitializedPropertyAccessException异常</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ chown +x gradlew</div></pre></td></tr></table></figure>
-<h1><span id="运行">运行</span></h1><p>安装freeline的Android Studio插件。</p>
-<p>安装方式:</p>
-<ul>
-<li>打开Android Studio</li>
-<li>进入Preferences → Plugins</li>
-<li>搜索freeline，然后安装</li>
-</ul>
+<p>注意：基本类型是不能使用<code>lateinit</code>的。会抛错<code>&#39;lateinit&#39; modifier is not allowed on properties of primitive types</code>。<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lateinit <span class="keyword">var</span> mutableInt: <span class="built_in">Int</span></div></pre></td></tr></table></figure></p>
+<h4><span id="代理属性">代理属性</span></h4><p>如果需要对基本类型等做非空处理，可以使用代理属性。<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mutableInt: <span class="built_in">Int</span> <span class="keyword">by</span> Delegates.notNull&lt;<span class="built_in">Int</span>&gt;()</div><div class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</div><div class="line">    mutableInt = <span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>一定要在初始化赋值之后才能读取<code>mutableInt</code>，不然会抛<code>IllegalStateException:Property ${property.name} should be initialized before get.</code></p>
+<h4><span id="空与非空处理">空与非空处理</span></h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">val</span> result = multableString.notNullElse &#123;</div><div class="line">    <span class="string">"<span class="subst">$it</span> is not null"</span></div><div class="line">&#125; (&#123; <span class="string">"is null"</span> &#125;)</div></pre></td></tr></table></figure>
+<p>新开发的方法<code>notNullElse</code>，对单个变量判空处理，非空时传入<code>it</code>为非空类型，提高了便捷性，为空时使用第二个block来返回值。适合那里需要判空，返回值<code>result</code>也是非空的类型，比较实用。</p>
+<h4><span id="多个值非空">多个值非空</span></h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">private</span> <span class="keyword">var</span> mLinearLayout: LinearLayout? = <span class="literal">null</span></div><div class="line"></div><div class="line">...</div><div class="line"><span class="keyword">private</span> <span class="function"><span class="keyword">fun</span> <span class="title">initView</span><span class="params">(context: <span class="type">Context</span>)</span></span> &#123;</div><div class="line">    mLinearLayout = LinearLayout(context)</div><div class="line">&#125;</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line"><span class="keyword">if</span> (tvItem == <span class="literal">null</span>) &#123;</div><div class="line">    mLinearLayout!!.addView(childTvItem)</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">    mLinearLayout!!.addView(childTvItem, mLinearLayout!!.indexOfChild(tvItem) + <span class="number">1</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>当我们要对多个值判断的时候，<code>let</code>就不那么好用了，但如果不使用<code>let</code>就拿不到非空的类型，像上面要判断2个都不为空时做操作，为空时另外一个逻辑。其实一早我们就已经判断空了，有没有更好的方法呢？</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">allNotNullElse(tvItem, mLinearLayout) &#123; a, b -&gt;</div><div class="line">    b.addView(childTvItem, b.indexOfChild(tvItem) + <span class="number">1</span>)</div><div class="line">&#125; (&#123; mLinearLayout?.addView(childTvItem) &#125;)</div></pre></td></tr></table></figure>
+<p>新开发的方法<code>allNotNullElse</code>返回的a, b 两个值已经是非空类型了，这样<code>addView</code>使用的也是非空类型，使用起来更方便了。</p>
 
       
 
@@ -244,15 +244,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">android</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">freeline</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">构建</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">kotlin</a>
         		</li>
       		
 		</ul>
@@ -264,7 +256,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/android//" class="article-tag-list-link color3">android</a>
+        			<a href="/categories/kotlin//" class="article-tag-list-link color2">kotlin</a>
         		</li>
       		
 		</ul>
@@ -319,7 +311,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.itvincent.net/2017/01/01/freeline-guide/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -333,18 +325,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/01/09/qiniu-mardown-image/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          使用七牛云存储Markdown用的图片
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/12/27/hashmap-arraymap/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Android的HashMap和ArrayMap对比</div>
+    <a href="/2018/03/06/unused-resource-explorer/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Unused Resource Explorer——Android无用资源浏览器</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -371,7 +354,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">运行</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">如何避免!!？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.1.</span> <span class="toc-text">使用?.let/?.apply/?.run</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.2.</span> <span class="toc-text">用Val替代Var</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.3.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.4.</span> <span class="toc-text">使用Elvis操作符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.5.</span> <span class="toc-text">声明lateinit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.6.</span> <span class="toc-text">代理属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.7.</span> <span class="toc-text">空与非空处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#undefined"><span class="toc-number">1.8.</span> <span class="toc-text">多个值非空</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -396,7 +379,7 @@ var _hmt = _hmt || [];
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "Freeline使用指南",
+  id: "Kotlin如何避免!!",
   owner: 'itvincent-git',
   repo: 'itvincent-git.github.io',
   oauth: {
