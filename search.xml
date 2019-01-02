@@ -65,7 +65,7 @@
 </ul>
 <a id="more"></a>
 <h4><span id="安装插件">安装插件</span></h4><ul>
-<li><p><a href="http://ojicajn2x.bkt.clouddn.com/18-03-06-unused-resource-explorer.jar" target="_blank" rel="noopener">下载插件文件</a></p>
+<li><p><a href="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/18-03-06-unused-resource-explorer.jar" target="_blank" rel="noopener">下载插件文件</a></p>
 </li>
 <li><p><a href="https://www.jetbrains.com/help/idea/installing-a-plugin-from-disk.html" target="_blank" rel="noopener">使用本地文件安装方式安装到AndroidStudio</a></p>
 <blockquote>
@@ -85,7 +85,7 @@
 <li>首先第一步执行<strong>lint</strong>命令来生成分析报告xml文件。</li>
 <li>打开<strong>Android Studio</strong>的<strong>Gradle Projects</strong>面板，选择一个module下的<strong>lint</strong>命令，双击执行</li>
 </ul>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-2.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/unused-resource-explorer-2.png" alt=""></p>
 <ul>
 <li><p>Gradle执行成功后，会生成如下文件：<strong><module>/build/outputs/lint-results-debug.xml</module></strong>，记下这个文件的位置，下面会用到。</p>
 <blockquote>
@@ -101,7 +101,7 @@
 <li><strong>Delete</strong>：选择一个列表中的资源，点击Delete删除它</li>
 <li><strong>Clean</strong>：清理列表中的<strong>layout/anim/drawble/</strong>下的资源，清理列表中<strong>.png/.jpg</strong>为后缀的资源</li>
 </ul>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/unused-resource-explorer-4.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/unused-resource-explorer-4.png" alt=""></p>
 ]]></content>
       
         <categories>
@@ -299,7 +299,7 @@
     <entry>
       <title><![CDATA[Protobuf原理分析]]></title>
       <url>http://www.itvincent.net/2017/04/04/protobuf-principle/</url>
-      <content type="html"><![CDATA[<p><img src="http://ojicajn2x.bkt.clouddn.com/18-1-10/86470598.jpg" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/18-1-10/86470598.jpg" alt=""></p>
 <blockquote>
 <p>详细分析protobuf(以下简称pb)数据序列化Tag-WireType-Value方式，对VARINT、带符号整型的详细分析，分别对<code>int32, int64, uint32, uint64, sint32, sint64, bool, enum，fixed64, sfixed64, double, string, bytes, embedded messages, packed repeated fields, fixed32, sfixed32, float</code>所有protobuf支持的数据类型进行说明。通过demo和验证过程，相信能帮忙到大家理解protobuf的原理。<br><a id="more"></a></p>
 </blockquote>
@@ -525,7 +525,7 @@
     <entry>
       <title><![CDATA[Protobuf在Android下的使用说明]]></title>
       <url>http://www.itvincent.net/2017/03/28/protobuf-java-android-guildline/</url>
-      <content type="html"><![CDATA[<p><img src="http://ojicajn2x.bkt.clouddn.com/18-2-3/89483667.jpg" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/18-2-3/89483667.jpg" alt=""></p>
 <blockquote>
 <p>protobuf nano是一个比较新的Protobuf官方实现，很适合在android应用中使用，相比原来的java实现，减少代码量和方法数，原为了这个问题而用C++实现的朋友们，可以换到这个实现，避免尴尬。</p>
 </blockquote>
@@ -636,7 +636,7 @@
       <title><![CDATA[一个静态网站生成工具的对比网站 - Static Generator]]></title>
       <url>http://www.itvincent.net/2017/02/21/static-generator-compare-site/</url>
       <content type="html"><![CDATA[<p><a href="https://www.staticgen.com/" target="_blank" rel="noopener">https://www.staticgen.com/</a> 是一个静态网站生成器的对比网站，有需要制作一个静态网页的朋友可以在上面找到丰富的项目。</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/static-gen-01.jpg" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/static-gen-01.jpg" alt=""></p>
 <a id="more"></a>
 <ul>
 <li>Jekyll、Hugo、Hexo是用来制作<strong>博客类</strong>站点的</li>
@@ -665,7 +665,7 @@
       <content type="html"><![CDATA[<blockquote>
 <p>买了个自己的域名，想把Github Pages绑定到这个域名下。结合了网上的文章及Github Pages的帮助文档，整理出下面的完整设置方式。</p>
 </blockquote>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/godaddy-01.jpg" alt="godaddy"></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/godaddy-01.jpg" alt="godaddy"></p>
 <a id="more"></a>
 <h1><span id="github上设置">Github上设置</span></h1><p>首先要在Github Pages的仓库上增加一个名叫<code>CNAME</code>的文件，我们可以用我们hexo项目的source目录下增加，内容为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">example.com</div></pre></td></tr></table></figure>
@@ -762,7 +762,7 @@
 <h1><span id="收录">收录</span></h1><p>一个新的站点要被搜索引擎搜索到，首先就要手动将站点收录到搜索引擎里，下面主要讲述Baidu及Google搜索引擎的收录方式。</p>
 <a id="more"></a>
 <h2><span id="baidu收录">Baidu收录</span></h2><h3><span id="站点验证">站点验证</span></h3><p>百度站点验证入口： <a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="noopener">http://zhanzhang.baidu.com/dashboard/index</a></p>
-<p>点击添加网站：<br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/32775264-file_1486367579749_52d8.png" alt=""></p>
+<p>点击添加网站：<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/32775264-file_1486367579749_52d8.png" alt=""></p>
 <p>有三种验证方式：</p>
 <ul>
 <li>文件验证</li>
@@ -793,8 +793,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</div><div class="line">baidu_push: true</div></pre></td></tr></table></figure>
 <p>查看源码，看到有下面一段代码证明就OK了。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> bp = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">    <span class="keyword">var</span> curProtocol = <span class="built_in">window</span>.location.protocol.split(<span class="string">':'</span>)[<span class="number">0</span>];</div><div class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">'https'</span>) &#123;</div><div class="line">        bp.src = <span class="string">'https://zz.bdstatic.com/linksubmit/push.js'</span>;        </div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> &#123;</div><div class="line">        bp.src = <span class="string">'http://push.zhanzhang.baidu.com/push.js'</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>];</div><div class="line">    s.parentNode.insertBefore(bp, s);</div><div class="line">&#125;)();</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <hr>
-<h2><span id="google收录">Google收录</span></h2><h3><span id="站点验证">站点验证</span></h3><p>打开如何将内容提交给 Google <a href="http://www.google.cn/intl/zh-CN/submit_content.html" target="_blank" rel="noopener">http://www.google.cn/intl/zh-CN/submit_content.html</a><br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/64619652-file_1486351808275_2ef1.png" alt=""></p>
-<p>打开将您的网址添加到 Google 索引中 <a href="https://www.google.com/webmasters/tools/submit-url?hl=zh-CN" target="_blank" rel="noopener">https://www.google.com/webmasters/tools/submit-url?hl=zh-CN</a><br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/93370609-file_1486351893453_5b72.png" alt=""></p>
+<h2><span id="google收录">Google收录</span></h2><h3><span id="站点验证">站点验证</span></h3><p>打开如何将内容提交给 Google <a href="http://www.google.cn/intl/zh-CN/submit_content.html" target="_blank" rel="noopener">http://www.google.cn/intl/zh-CN/submit_content.html</a><br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/64619652-file_1486351808275_2ef1.png" alt=""></p>
+<p>打开将您的网址添加到 Google 索引中 <a href="https://www.google.com/webmasters/tools/submit-url?hl=zh-CN" target="_blank" rel="noopener">https://www.google.com/webmasters/tools/submit-url?hl=zh-CN</a><br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/93370609-file_1486351893453_5b72.png" alt=""></p>
 <p>验证你的网站是否你所拥有，如果使用了godaddy.com的DNS解释服务，Google默认支持，按指示操作一下即可，如果是其它DNS服务商，请按提示操作。</p>
 <p>验证结束后，查看一下DNS解释，多了一项Verify Code。应该就是Google验证用来验证用的。<br><code>TXT  @   google-site-verification=&lt;Your verify Code&gt;    1 Hour</code></p>
 <p><em>除了使用DNS验证，也可以使用其它验证方式，跟Baidu相似。</em> </p>
@@ -803,7 +803,7 @@
 <ul>
 <li>左边菜单选择<code>抓取 -&gt; Google 抓取工具</code></li>
 </ul>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/25454670-file_1486361925084_6de6.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/25454670-file_1486361925084_6de6.png" alt=""></p>
 <ul>
 <li><p>分别选择“桌面”和“移动版”，点击“抓取”。</p>
 </li>
@@ -813,7 +813,7 @@
 <h3><span id="站点地图">站点地图</span></h3><ul>
 <li><p>左边菜单选择<code>抓取 -&gt; 站点地图</code>。</p>
 </li>
-<li><p>选择“添加站点地图”。<br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/5191345-file_1486362236075_1280a.png" alt=""></p>
+<li><p>选择“添加站点地图”。<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/5191345-file_1486362236075_1280a.png" alt=""></p>
 </li>
 <li>输入<code>sitemap.xml</code>，提交。</li>
 </ul>
@@ -864,13 +864,13 @@
 <p>可以一路按enter键，然后可在<code>~/.ssh/</code>下找到上面的2个文件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-add</div></pre></td></tr></table></figure>
 <h2><span id="记录密钥">记录密钥</span></h2><p>在coding.net的<code>个人设置 》 SSH公钥</code> 添加这个公钥，如下图：</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/42704688-file_1486373356226_139a3.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/42704688-file_1486373356226_139a3.png" alt=""></p>
 <p>之后执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@git.coding.net</div></pre></td></tr></table></figure>
 <p>提示如下就证明OK了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hello &lt;Your Name&gt;! You&apos;ve connected to Coding.net via SSH successfully!</div></pre></td></tr></table></figure>
 <p><em>如果github上也是这个邮箱，那就不用再生成一次了，否则按照另外一个域名操作一次。</em></p>
-<p>在github上<code>个人设置 》 SSH and GPG keys 》new SSH key</code>添加公钥，如下图：<br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/624973-file_1486374591691_8ce.png" alt=""></p>
+<p>在github上<code>个人设置 》 SSH and GPG keys 》new SSH key</code>添加公钥，如下图：<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/624973-file_1486374591691_8ce.png" alt=""></p>
 <h1><span id="安装hexo-deployer-git">安装hexo-deployer-git</span></h1><p>用于hexo部署到git的插件，如果之前安装过就不需要了。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 <h1><span id="一次部署到github-pages和codingnet">一次部署到Github Pages和coding.net</span></h1><p>修改hexo根目录的配置文件<code>_config.yml</code>：</p>
@@ -903,11 +903,11 @@
       <content type="html"><![CDATA[<blockquote>
 <p>当你的Github Pages博客访问一个不存在的url时，Github Page会显示这样一个404页面。</p>
 </blockquote>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-1-28/76826274-file_1485599267911_4e3c.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-28/76826274-file_1485599267911_4e3c.png" alt=""></p>
 <p>为了显示一个友好的404页面，或者在出现404时，不要太让人看出来是Github Pages : )<br><a id="more"></a></p>
-<h1><span id="自定义github-pages的404页面">自定义Github Pages的404页面</span></h1><p>在你的<code>/myblog/source/</code>下，增加一个404.html。<br><img src="http://ojicajn2x.bkt.clouddn.com/17-1-28/52627774-file_1485599551899_db88.png" alt=""></p>
+<h1><span id="自定义github-pages的404页面">自定义Github Pages的404页面</span></h1><p>在你的<code>/myblog/source/</code>下，增加一个404.html。<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-28/52627774-file_1485599551899_db88.png" alt=""></p>
 <p>然后<code>$ hexo d -g</code>上传到Github上。</p>
-<h1><span id="自定义的404页面">自定义的404页面</span></h1><p>我这里使用了腾讯的公益404页面，也算行了点善。<br><img src="http://ojicajn2x.bkt.clouddn.com/17-1-28/65096033-file_1485599951356_f44f.png" alt=""></p>
+<h1><span id="自定义的404页面">自定义的404页面</span></h1><p>我这里使用了腾讯的公益404页面，也算行了点善。<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-28/65096033-file_1485599951356_f44f.png" alt=""></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=utf-8;"</span>/&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> /&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index,follow"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span></span></div><div class="line">        <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"http://itvincent.net"</span></div><div class="line">        <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;<span class="undefined"></span></div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 ]]></content>
       
@@ -986,7 +986,7 @@
     <entry>
       <title><![CDATA[安装Hexo博客]]></title>
       <url>http://www.itvincent.net/2017/01/20/install-hexo-blog/</url>
-      <content type="html"><![CDATA[<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-17/59463456-file_1487333574052_13fc6.png" alt="hexo homepage"></p>
+      <content type="html"><![CDATA[<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-17/59463456-file_1487333574052_13fc6.png" alt="hexo homepage"></p>
 <h1><span id="hexo简介">hexo简介</span></h1><p>hexo是个快速、简洁且高效的博客框架。</p>
 <ul>
 <li><p>超快速度</p>
@@ -1108,16 +1108,16 @@
     <entry>
       <title><![CDATA[使用七牛云存储Markdown用的图片]]></title>
       <url>http://www.itvincent.net/2017/01/09/qiniu-mardown-image/</url>
-      <content type="html"><![CDATA[<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-17/95692112-file_1487333779860_1483d.png" alt="qiniu homepage"></p>
+      <content type="html"><![CDATA[<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-17/95692112-file_1487333779860_1483d.png" alt="qiniu homepage"></p>
 <h2><span id="概述">概述</span></h2><p>使用md写文章的人，喜欢他的方便性，可移植性，写一个文本就包括了文章及排版。不过图片链接却不是那么方便，每个博客站点都有一些自己的图片上传方式。你想把这篇文章再copy到其他站点，由于源站点会设置图片的防盗链，新的站点上的文章就看不到图片了。为了解决这个问题，ka老师告诉了我一个图床的方式来解决。<br><a id="more"></a></p>
 <h2><span id="图床">图床</span></h2><ol>
 <li><p>首先选择一个图床网站或软件，例如<a href="http://yotuku.cn/" target="_blank" rel="noopener">极间图床</a>。</p>
 </li>
 <li><p>打开站点后，可以把图片拖到这里或选择文件来上传图片。</p>
-<p> <img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/5155253-file_1483963360014_7779.png" alt=""></p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/5155253-file_1483963360014_7779.png" alt=""></p>
 </li>
 <li><p>上传完后，在下面会出现链接，可以直接复制链接，或者点击复制markdown链接。</p>
-<p> <img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/85911607-file_1483963456256_11ddb.png" alt=""></p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/85911607-file_1483963456256_11ddb.png" alt=""></p>
 </li>
 </ol>
 <p>不过由于这个服务上传的地址是一个公用的地址，有可能被删除或失效。因此极简图床也提供给我们自己设置七牛空间来上传图片。</p>
@@ -1125,20 +1125,20 @@
 <li><p>首先打开<a href="http://qiniu.com" target="_blank" rel="noopener">七牛站点</a>。注册一个账号，输入邮箱、手机、姓名等身份认证之后完成注册。</p>
 </li>
 <li><p>然后创建一个对象储存。</p>
-<p> <img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/75752041-file_1483964119462_509c.png" alt=""></p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/75752041-file_1483964119462_509c.png" alt=""></p>
 </li>
 <li><p>自己起一个空间名称，区域选择自己附近的，访问控制选择“公开空间”。</p>
-<p> <img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/52203369-file_1483964002644_706.png" alt=""></p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/52203369-file_1483964002644_706.png" alt=""></p>
 </li>
 <li><p>在“个人面板”-&gt;“密钥管理”中查看AccessKey/SecretKey。</p>
-<p> <img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/63087181-file_1483964002789_c3e8.png" alt=""></p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/63087181-file_1483964002789_c3e8.png" alt=""></p>
 </li>
 <li><p>在储存空间的“空间概览”里，记住这里的“测试域名”</p>
-<p> <img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/20046002-file_1483964605921_e3f8.png" alt=""></p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/20046002-file_1483964605921_e3f8.png" alt=""></p>
 </li>
 </ol>
 <h2><span id="在图床上设置七牛账号">在图床上设置七牛账号</span></h2><p>在极简图床上配置上刚才七牛储存的“空间名称”、“AccessKey”、“SecretKey”、“域名”后，保存。然后就可以上传到自己专属的七牛空间上了。</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/44269451-file_1483964002921_bea1.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/44269451-file_1483964002921_bea1.png" alt=""></p>
 ]]></content>
       
         <categories>
@@ -1285,18 +1285,18 @@
     <entry>
       <title><![CDATA[如何使用Jekyll和github Pages搭建博客]]></title>
       <url>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</url>
-      <content type="html"><![CDATA[<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-17/46801530-file_1487334263124_bdcf.png" alt="jekyll"></p>
+      <content type="html"><![CDATA[<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-17/46801530-file_1487334263124_bdcf.png" alt="jekyll"></p>
 <h2><span id="1安装jekyll">1.安装jekyll</span></h2><p>在linux或mac系统中，打开终端，输入如下：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">~ $ gem install jekyll bundler</div><div class="line">~ $ jekyll new myblog</div><div class="line">~ $ cd myblog</div><div class="line">~ /myblog $ bundle exec jekyll serve</div><div class="line"># =&gt; Now browse to http://localhost:4000</div></pre></td></tr></table></figure>
 <p>看到如下信息代表运行成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Server address: http://127.0.0.1:4000/</div><div class="line">Server running... press ctrl-c to stop.</div></pre></td></tr></table></figure>
 <p>浏览器中打开 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 看见一个欢迎的页面代表安装成功了。<br><a id="more"></a></p>
 <h2><span id="2申请github-pages">2.申请github pages</span></h2><p>打开github.com，Start a project</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/3839245-file_1483958471681_15c66.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/3839245-file_1483958471681_15c66.png" alt=""></p>
 <p>或者从这里创建一个仓库</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/87356132-file_1483958471565_698e.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/87356132-file_1483958471565_698e.png" alt=""></p>
 <p>按照<code>username.github.io</code>的格式来创建一个仓库</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-1-9/54134474-file_1483958471420_c7b.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/54134474-file_1483958471420_c7b.png" alt=""></p>
 <p>创建一个index.html，内容为<code>hello world</code>，保存然后上传到github repository。</p>
 <p>打开 <a href="https://itvincent-git.github.io/" target="_blank" rel="noopener">https://itvincent-git.github.io/</a>。看到<code>hello world</code>的字样，就代表github pages创建成功了。</p>
 <h2><span id="3把jekyll放到github-pages上">3.把jekyll放到github pages上</span></h2><p>由于github pages是直接支持jekyll的，所以可以直接把刚才生成的<code>myblog</code>项目直接上传到<a href="https://itvincent-git.github.io/" target="_blank" rel="noopener">https://itvincent-git.github.io/</a>上。</p>

@@ -16,16 +16,16 @@
 <meta property="og:site_name" content="itVincent的博客">
 <meta property="og:description" content="由于我的Hexo站点是部署在Github Pages上的，但Github Pages屏蔽了Baidu的爬虫，现在增加了一份代码部署在了coding.net，这样Baidu就可以正常抓取了，详细可以看Hexo站点部署到Github Pages和coding.net。  收录一个新的站点要被搜索引擎搜索到，首先就要手动将站点收录到搜索引擎里，下面主要讲述Baidu及Google搜索引擎的收录方式。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/32775264-file_1486367579749_52d8.png">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/64619652-file_1486351808275_2ef1.png">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/93370609-file_1486351893453_5b72.png">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/25454670-file_1486361925084_6de6.png">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/5191345-file_1486362236075_1280a.png">
-<meta property="og:updated_time" content="2017-02-14T10:09:57.000Z">
+<meta property="og:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/32775264-file_1486367579749_52d8.png">
+<meta property="og:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/64619652-file_1486351808275_2ef1.png">
+<meta property="og:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/93370609-file_1486351893453_5b72.png">
+<meta property="og:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/25454670-file_1486361925084_6de6.png">
+<meta property="og:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/5191345-file_1486362236075_1280a.png">
+<meta property="og:updated_time" content="2019-01-02T07:59:49.323Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="让Hexo站点在百度和Google中被搜索到">
 <meta name="twitter:description" content="由于我的Hexo站点是部署在Github Pages上的，但Github Pages屏蔽了Baidu的爬虫，现在增加了一份代码部署在了coding.net，这样Baidu就可以正常抓取了，详细可以看Hexo站点部署到Github Pages和coding.net。  收录一个新的站点要被搜索引擎搜索到，首先就要手动将站点收录到搜索引擎里，下面主要讲述Baidu及Google搜索引擎的收录方式。">
-<meta name="twitter:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/32775264-file_1486367579749_52d8.png">
+<meta name="twitter:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/32775264-file_1486367579749_52d8.png">
   
     <link rel="alternative" href="/atom.xml" title="itVincent的博客" type="application/atom+xml">
   
@@ -222,7 +222,7 @@ var _hmt = _hmt || [];
 <h1><span id="收录">收录</span></h1><p>一个新的站点要被搜索引擎搜索到，首先就要手动将站点收录到搜索引擎里，下面主要讲述Baidu及Google搜索引擎的收录方式。</p>
 <a id="more"></a>
 <h2><span id="baidu收录">Baidu收录</span></h2><h3><span id="站点验证">站点验证</span></h3><p>百度站点验证入口： <a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="noopener">http://zhanzhang.baidu.com/dashboard/index</a></p>
-<p>点击添加网站：<br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/32775264-file_1486367579749_52d8.png" alt=""></p>
+<p>点击添加网站：<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/32775264-file_1486367579749_52d8.png" alt=""></p>
 <p>有三种验证方式：</p>
 <ul>
 <li>文件验证</li>
@@ -253,8 +253,8 @@ var _hmt = _hmt || [];
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</div><div class="line">baidu_push: true</div></pre></td></tr></table></figure>
 <p>查看源码，看到有下面一段代码证明就OK了。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> bp = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">    <span class="keyword">var</span> curProtocol = <span class="built_in">window</span>.location.protocol.split(<span class="string">':'</span>)[<span class="number">0</span>];</div><div class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">'https'</span>) &#123;</div><div class="line">        bp.src = <span class="string">'https://zz.bdstatic.com/linksubmit/push.js'</span>;        </div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> &#123;</div><div class="line">        bp.src = <span class="string">'http://push.zhanzhang.baidu.com/push.js'</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>];</div><div class="line">    s.parentNode.insertBefore(bp, s);</div><div class="line">&#125;)();</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <hr>
-<h2><span id="google收录">Google收录</span></h2><h3><span id="站点验证">站点验证</span></h3><p>打开如何将内容提交给 Google <a href="http://www.google.cn/intl/zh-CN/submit_content.html" target="_blank" rel="noopener">http://www.google.cn/intl/zh-CN/submit_content.html</a><br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/64619652-file_1486351808275_2ef1.png" alt=""></p>
-<p>打开将您的网址添加到 Google 索引中 <a href="https://www.google.com/webmasters/tools/submit-url?hl=zh-CN" target="_blank" rel="noopener">https://www.google.com/webmasters/tools/submit-url?hl=zh-CN</a><br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/93370609-file_1486351893453_5b72.png" alt=""></p>
+<h2><span id="google收录">Google收录</span></h2><h3><span id="站点验证">站点验证</span></h3><p>打开如何将内容提交给 Google <a href="http://www.google.cn/intl/zh-CN/submit_content.html" target="_blank" rel="noopener">http://www.google.cn/intl/zh-CN/submit_content.html</a><br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/64619652-file_1486351808275_2ef1.png" alt=""></p>
+<p>打开将您的网址添加到 Google 索引中 <a href="https://www.google.com/webmasters/tools/submit-url?hl=zh-CN" target="_blank" rel="noopener">https://www.google.com/webmasters/tools/submit-url?hl=zh-CN</a><br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/93370609-file_1486351893453_5b72.png" alt=""></p>
 <p>验证你的网站是否你所拥有，如果使用了godaddy.com的DNS解释服务，Google默认支持，按指示操作一下即可，如果是其它DNS服务商，请按提示操作。</p>
 <p>验证结束后，查看一下DNS解释，多了一项Verify Code。应该就是Google验证用来验证用的。<br><code>TXT  @   google-site-verification=&lt;Your verify Code&gt;    1 Hour</code></p>
 <p><em>除了使用DNS验证，也可以使用其它验证方式，跟Baidu相似。</em> </p>
@@ -263,7 +263,7 @@ var _hmt = _hmt || [];
 <ul>
 <li>左边菜单选择<code>抓取 -&gt; Google 抓取工具</code></li>
 </ul>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/25454670-file_1486361925084_6de6.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/25454670-file_1486361925084_6de6.png" alt=""></p>
 <ul>
 <li><p>分别选择“桌面”和“移动版”，点击“抓取”。</p>
 </li>
@@ -273,7 +273,7 @@ var _hmt = _hmt || [];
 <h3><span id="站点地图">站点地图</span></h3><ul>
 <li><p>左边菜单选择<code>抓取 -&gt; 站点地图</code>。</p>
 </li>
-<li><p>选择“添加站点地图”。<br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/5191345-file_1486362236075_1280a.png" alt=""></p>
+<li><p>选择“添加站点地图”。<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/5191345-file_1486362236075_1280a.png" alt=""></p>
 </li>
 <li>输入<code>sitemap.xml</code>，提交。</li>
 </ul>
@@ -473,7 +473,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Vincent Zhong
+    		&copy; 2019 Vincent Zhong
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten

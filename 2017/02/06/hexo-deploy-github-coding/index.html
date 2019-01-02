@@ -16,13 +16,13 @@
 <meta property="og:site_name" content="itVincent的博客">
 <meta property="og:description" content="Github Pages屏蔽了Baidu的爬虫，百度搜索引擎没法抓取到数据。coding.net也提供了类似Github Pages的功能，Baidu爬虫可以抓到数据，Google也能抓到数据。hexo支持部署到多个仓库的能力，下面我们就来操作一下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/42704688-file_1486373356226_139a3.png">
-<meta property="og:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/624973-file_1486374591691_8ce.png">
-<meta property="og:updated_time" content="2017-02-09T12:22:53.000Z">
+<meta property="og:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/42704688-file_1486373356226_139a3.png">
+<meta property="og:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/624973-file_1486374591691_8ce.png">
+<meta property="og:updated_time" content="2019-01-02T08:00:20.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo站点部署到Github Pages和coding.net">
 <meta name="twitter:description" content="Github Pages屏蔽了Baidu的爬虫，百度搜索引擎没法抓取到数据。coding.net也提供了类似Github Pages的功能，Baidu爬虫可以抓到数据，Google也能抓到数据。hexo支持部署到多个仓库的能力，下面我们就来操作一下。">
-<meta name="twitter:image" content="http://ojicajn2x.bkt.clouddn.com/17-2-6/42704688-file_1486373356226_139a3.png">
+<meta name="twitter:image" content="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/42704688-file_1486373356226_139a3.png">
   
     <link rel="alternative" href="/atom.xml" title="itVincent的博客" type="application/atom+xml">
   
@@ -223,13 +223,13 @@ var _hmt = _hmt || [];
 <p>可以一路按enter键，然后可在<code>~/.ssh/</code>下找到上面的2个文件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-add</div></pre></td></tr></table></figure>
 <h2><span id="记录密钥">记录密钥</span></h2><p>在coding.net的<code>个人设置 》 SSH公钥</code> 添加这个公钥，如下图：</p>
-<p><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/42704688-file_1486373356226_139a3.png" alt=""></p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/42704688-file_1486373356226_139a3.png" alt=""></p>
 <p>之后执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@git.coding.net</div></pre></td></tr></table></figure>
 <p>提示如下就证明OK了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hello &lt;Your Name&gt;! You&apos;ve connected to Coding.net via SSH successfully!</div></pre></td></tr></table></figure>
 <p><em>如果github上也是这个邮箱，那就不用再生成一次了，否则按照另外一个域名操作一次。</em></p>
-<p>在github上<code>个人设置 》 SSH and GPG keys 》new SSH key</code>添加公钥，如下图：<br><img src="http://ojicajn2x.bkt.clouddn.com/17-2-6/624973-file_1486374591691_8ce.png" alt=""></p>
+<p>在github上<code>个人设置 》 SSH and GPG keys 》new SSH key</code>添加公钥，如下图：<br><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-6/624973-file_1486374591691_8ce.png" alt=""></p>
 <h1><span id="安装hexo-deployer-git">安装hexo-deployer-git</span></h1><p>用于hexo部署到git的插件，如果之前安装过就不需要了。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 <h1><span id="一次部署到github-pages和codingnet">一次部署到Github Pages和coding.net</span></h1><p>修改hexo根目录的配置文件<code>_config.yml</code>：</p>
@@ -418,7 +418,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Vincent Zhong
+    		&copy; 2019 Vincent Zhong
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten

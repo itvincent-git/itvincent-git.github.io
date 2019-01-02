@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
-    <lastmod>2018-10-25T03:30:31.322Z</lastmod>
-    <data>
-        <display>
-        <title>Kotlin如何避免“!!”（非空断言）</title>
-        <pubTime>2018-10-24T11:27:07.000Z</pubTime>
-        
-        <tag>kotlin</tag>
-         
-         
-           
-             
-              <breadCrumb title="kotlin" url="http://www.itvincent.net/categories/kotlin/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.itvincent.net/2018/03/06/unused-resource-explorer/</loc>
-    <lastmod>2018-03-07T10:27:41.789Z</lastmod>
+    <lastmod>2019-01-02T08:02:26.708Z</lastmod>
     <data>
         <display>
         <title>Unused Resource Explorer——Android无用资源浏览器</title>
@@ -39,6 +19,236 @@
            
              
               <breadCrumb title="android" url="http://www.itvincent.net/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/04/04/protobuf-principle/</loc>
+    <lastmod>2019-01-02T08:02:09.464Z</lastmod>
+    <data>
+        <display>
+        <title>Protobuf原理分析</title>
+        <pubTime>2017-04-04T09:41:19.000Z</pubTime>
+        
+        <tag>protobuf</tag>
+         
+         
+           
+             
+              <breadCrumb title="protobuf" url="http://www.itvincent.net/categories/protobuf/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/03/28/protobuf-java-android-guildline/</loc>
+    <lastmod>2019-01-02T08:01:45.439Z</lastmod>
+    <data>
+        <display>
+        <title>Protobuf在Android下的使用说明</title>
+        <pubTime>2017-03-28T14:06:12.000Z</pubTime>
+        
+        <tag>protobuf</tag>
+         
+         
+           
+             
+              <breadCrumb title="protobuf" url="http://www.itvincent.net/categories/protobuf/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/21/static-generator-compare-site/</loc>
+    <lastmod>2019-01-02T08:01:28.776Z</lastmod>
+    <data>
+        <display>
+        <title>一个静态网站生成工具的对比网站 - Static Generator</title>
+        <pubTime>2017-02-21T07:42:17.000Z</pubTime>
+        
+        <tag>staticgen</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
+    <lastmod>2019-01-02T08:00:56.033Z</lastmod>
+    <data>
+        <display>
+        <title>绑定博客到自己的Godaddy域名</title>
+        <pubTime>2017-02-10T11:44:52.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>coding.net</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/06/hexo-deploy-github-coding/</loc>
+    <lastmod>2019-01-02T08:00:20.474Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo站点部署到Github Pages和coding.net</title>
+        <pubTime>2017-02-06T09:54:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/02/06/hexo-blog-baidu-google-seo/</loc>
+    <lastmod>2019-01-02T07:59:49.323Z</lastmod>
+    <data>
+        <display>
+        <title>让Hexo站点在百度和Google中被搜索到</title>
+        <pubTime>2017-02-06T09:58:38.000Z</pubTime>
+        
+        <tag>seo</tag>
+         
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/28/github-404/</loc>
+    <lastmod>2019-01-02T07:59:29.311Z</lastmod>
+    <data>
+        <display>
+        <title>如何自定义Github Pages的404页面</title>
+        <pubTime>2017-01-28T12:18:11.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="github" url="http://www.itvincent.net/categories/github/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/20/install-hexo-blog/</loc>
+    <lastmod>2019-01-02T07:58:26.894Z</lastmod>
+    <data>
+        <display>
+        <title>安装Hexo博客</title>
+        <pubTime>2017-01-20T10:20:07.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2017/01/09/qiniu-mardown-image/</loc>
+    <lastmod>2019-01-02T07:57:47.359Z</lastmod>
+    <data>
+        <display>
+        <title>使用七牛云存储Markdown用的图片</title>
+        <pubTime>2017-01-09T07:00:00.000Z</pubTime>
+        
+        <tag>markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="markdown" url="http://www.itvincent.net/categories/markdown/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
+    <lastmod>2019-01-02T07:56:49.731Z</lastmod>
+    <data>
+        <display>
+        <title>如何使用Jekyll和github Pages搭建博客</title>
+        <pubTime>2016-12-15T10:50:17.000Z</pubTime>
+        
+        <tag>jekyll</tag>
+         
+         
+           
+             
+              <breadCrumb title="jekyll" url="http://www.itvincent.net/categories/jekyll/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
+    <lastmod>2018-10-25T03:30:31.322Z</lastmod>
+    <data>
+        <display>
+        <title>Kotlin如何避免“!!”（非空断言）</title>
+        <pubTime>2018-10-24T11:27:07.000Z</pubTime>
+        
+        <tag>kotlin</tag>
+         
+         
+           
+             
+              <breadCrumb title="kotlin" url="http://www.itvincent.net/categories/kotlin/"/>
           
         </display>
     </data>
@@ -87,111 +297,7 @@
     </url>
 
     
-  <url>
-    <loc>http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
-    <lastmod>2018-03-03T09:56:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>绑定博客到自己的Godaddy域名</title>
-        <pubTime>2017-02-10T11:44:52.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
-        <tag>coding.net</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://www.itvincent.net/2017/02/21/static-generator-compare-site/</loc>
-    <lastmod>2018-03-03T09:52:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>一个静态网站生成工具的对比网站 - Static Generator</title>
-        <pubTime>2017-02-21T07:42:17.000Z</pubTime>
-        
-        <tag>staticgen</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/01/28/github-404/</loc>
-    <lastmod>2018-02-03T03:23:09.000Z</lastmod>
-    <data>
-        <display>
-        <title>如何自定义Github Pages的404页面</title>
-        <pubTime>2017-01-28T12:18:11.000Z</pubTime>
-        
-        <tag>github</tag>
-         
-         
-           
-             
-              <breadCrumb title="github" url="http://www.itvincent.net/categories/github/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/03/28/protobuf-java-android-guildline/</loc>
-    <lastmod>2018-02-03T03:21:35.510Z</lastmod>
-    <data>
-        <display>
-        <title>Protobuf在Android下的使用说明</title>
-        <pubTime>2017-03-28T14:06:12.000Z</pubTime>
-        
-        <tag>protobuf</tag>
-         
-         
-           
-             
-              <breadCrumb title="protobuf" url="http://www.itvincent.net/categories/protobuf/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/04/04/protobuf-principle/</loc>
-    <lastmod>2018-01-20T11:58:40.269Z</lastmod>
-    <data>
-        <display>
-        <title>Protobuf原理分析</title>
-        <pubTime>2017-04-04T09:41:19.000Z</pubTime>
-        
-        <tag>protobuf</tag>
-         
-         
-           
-             
-              <breadCrumb title="protobuf" url="http://www.itvincent.net/categories/protobuf/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://www.itvincent.net/2017/11/28/gradle-sync-fail/</loc>
@@ -311,112 +417,6 @@
            
              
               <breadCrumb title="android" url="http://www.itvincent.net/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
-    <lastmod>2017-02-17T12:24:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>如何使用Jekyll和github Pages搭建博客</title>
-        <pubTime>2016-12-15T10:50:17.000Z</pubTime>
-        
-        <tag>jekyll</tag>
-         
-         
-           
-             
-              <breadCrumb title="jekyll" url="http://www.itvincent.net/categories/jekyll/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/01/09/qiniu-mardown-image/</loc>
-    <lastmod>2017-02-17T12:16:35.000Z</lastmod>
-    <data>
-        <display>
-        <title>使用七牛云存储Markdown用的图片</title>
-        <pubTime>2017-01-09T07:00:00.000Z</pubTime>
-        
-        <tag>markdown</tag>
-         
-         
-           
-             
-              <breadCrumb title="markdown" url="http://www.itvincent.net/categories/markdown/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/01/20/install-hexo-blog/</loc>
-    <lastmod>2017-02-17T12:14:42.000Z</lastmod>
-    <data>
-        <display>
-        <title>安装Hexo博客</title>
-        <pubTime>2017-01-20T10:20:07.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/02/06/hexo-blog-baidu-google-seo/</loc>
-    <lastmod>2017-02-14T10:09:57.000Z</lastmod>
-    <data>
-        <display>
-        <title>让Hexo站点在百度和Google中被搜索到</title>
-        <pubTime>2017-02-06T09:58:38.000Z</pubTime>
-        
-        <tag>seo</tag>
-         
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.itvincent.net/2017/02/06/hexo-deploy-github-coding/</loc>
-    <lastmod>2017-02-09T12:22:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo站点部署到Github Pages和coding.net</title>
-        <pubTime>2017-02-06T09:54:00.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.itvincent.net/categories/hexo/"/>
           
         </display>
     </data>
