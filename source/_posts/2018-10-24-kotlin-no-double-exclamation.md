@@ -2,7 +2,8 @@
 title: Kotlin如何避免“!!”（非空断言）
 date: 2018-10-24 19:27:07
 categories: kotlin
-keywords: kotlin,!!
+keywords: 
+    - kotlin
 tags: kotlin
 ---
 

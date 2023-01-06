@@ -2,7 +2,10 @@
 title: FastDelete-Windows下快速删除文件夹的工具
 date: 2018-03-02 19:25:49
 categories: windows
-keywords: nodejs,windows,delete
+keywords: 
+  - nodejs
+  - windows
+  - delete
 tags: nodejs
 ---
 

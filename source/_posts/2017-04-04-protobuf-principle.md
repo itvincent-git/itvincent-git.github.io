@@ -1,7 +1,12 @@
 ---
 title: Protobuf原理分析
 categories: protobuf
-keywords: 'protobuf,varint,tag,length,value'
+keywords: 
+  - protobuf
+  - varint
+  - tag
+  - length
+  - value
 tags: protobuf
 date: 2017-04-04 17:41:19
 ---

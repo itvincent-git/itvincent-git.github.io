@@ -1,7 +1,8 @@
 ---
 title: Android gradle.zip文件下载失败
 categories: gradle
-keywords: gradle
+keywords: 
+    - gradle
 tags: gradle
 ---
 

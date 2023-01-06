@@ -2,7 +2,10 @@
 title: 使用protobuf gradle plugin创建 protobuf-lite
 date: 2017-09-12 14:36:09
 categories: protobuf
-keywords: 'protobuf,android,protobuf gradle plugin'
+keywords: 
+    - protobuf
+    - android
+    - protobuf gradle plugin
 tags: protobuf
 ---
 > `protobuf`在android还推荐一种使用方式为`protobuf-lite`，使用`protobuf gradle plugin`在

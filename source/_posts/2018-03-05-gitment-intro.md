@@ -2,7 +2,9 @@
 title: Gitment评论系统介绍
 date: 2018-03-05 17:12:00
 categories: hexo
-keywords: hexo, gitment
+keywords:
+    - hexo
+    - gitment
 tags: 
     - hexo
     - gitment

@@ -1,7 +1,11 @@
 ---
 title: Android更改packageName包名
 categories: android
-keywords: 'android,packageName,包名,rename'
+keywords: 
+  - android
+  - packageName
+  - 包名
+  - rename
 tags: android
 date: 2017-04-26 18:35:45
 ---

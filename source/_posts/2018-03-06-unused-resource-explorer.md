@@ -1,7 +1,9 @@
 ---
 title: Unused Resource Explorer——Android无用资源浏览器
 categories: android
-keywords: Intellij Plugin, android
+keywords:
+  - Intellij Plugin
+  - android
 tags: 
   - Intellij Plugin
   - android

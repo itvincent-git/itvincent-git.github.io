@@ -6,7 +6,10 @@
 title: itVincent的博客
 subtitle: 'http://www.itvincent.net/'
 description: 'Android,Java,Hexo'
-keywords: Android,Java,Hexo
+keywords: 
+  - Android
+  - Java
+  - Hexo
 author: Vincent Zhong
 language: zh-Hans
 timezone: ''
@@ -97,7 +100,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: melody # https://molunerfinn.com/hexo-theme-melody-doc/zh-Hans/quick-start.html#%E8%AE%BE%E7%BD%AE
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
