@@ -1,0 +1,21 @@
+# Android URI Route Thinking
+
+- 简化Activity跳转(Intent)
+- module间的调用,不用管依赖关系,都可以处理
+- 进程间的调用,不用管是否进程内还是进程间,都统一调用
+- 减少Activiy耦合(如果多module开发,低层的module调用不了上层module里的activity)
+- H5调用本地代码
+  - 跳转到定义uri的处理
+  - 参数错误的处理
+  - A/B Test
+- 实现类型变化
+  - 本来是Activity,现在变为H5
+  - 本来是个Activity,现在变为Fragment
+- 统一添加参数
+  - 通过拦截添加参数,例如统一加cookie,uid
+- 外部调用统一入口
+  - 设置一个代理的activity,再跳到内部的activity
+- 按不同的schema调用不同的处理器
+  - activity://  用于activity跳转
+  - http:// url跳转
+- 支持拦截器
