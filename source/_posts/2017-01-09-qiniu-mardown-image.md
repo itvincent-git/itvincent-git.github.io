@@ -2,7 +2,11 @@
 layout: post
 title:  "使用七牛云存储markdown用的图片"
 date:   2017-01-09 15:00:00 +0800
-keywords: qiniu,mardown,图床,极间图床
+keywords: 
+    - qiniu
+    - mardown
+    - 图床
+    - 极间图床
 categories: markdown
 tags:
 - markdown

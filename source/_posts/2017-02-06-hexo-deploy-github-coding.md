@@ -5,7 +5,11 @@ categories:
 tags:
   - hexo
   - github
-keywords: hexo,Github,GithubPages,coding.net
+keywords: 
+  - hexo
+  - Github
+  - GithubPages
+  - coding.net
 date: 2017-02-06 17:54:00
 ---
 

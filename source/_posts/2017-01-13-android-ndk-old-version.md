@@ -3,7 +3,10 @@ layout: post
 title: 如何下载旧的Android NDK版本
 date: 2017-01-13 14:54:16
 categories: android
-keywords: android,ndk,r12b,r11c,r10e,r10c,r9d,r8e,r7c
+keywords: 
+  - android
+  - ndk
+  - r12b
 tags:
 - android
 - ndk

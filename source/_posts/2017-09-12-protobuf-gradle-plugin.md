@@ -6,7 +6,8 @@ keywords:
     - protobuf
     - android
     - protobuf gradle plugin
-tags: protobuf
+tags: 
+    - protobuf
 ---
 > `protobuf`在android还推荐一种使用方式为`protobuf-lite`，使用`protobuf gradle plugin`在
 构建时生成代码的方式来使用`protobuf`。

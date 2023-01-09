@@ -1,8 +1,11 @@
 ---
 title: gradle中显示包依赖树
 categories: gradle
-keywords: gradle,dependencies,tree
-tags: gradle
+keywords: 
+    - gradle
+    - dependencies tree
+tags: 
+    - gradle
 date: 2017-03-07 18:02:34
 ---
 

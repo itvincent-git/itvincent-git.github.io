@@ -1,7 +1,9 @@
 ---
 title: svn ignore的使用方法
 categories: svn
-keywords: 'svn,ignore'
+keywords: 
+    - svn
+    - ignore
 tags: svn
 date: 2017-02-24 13:21:17
 ---

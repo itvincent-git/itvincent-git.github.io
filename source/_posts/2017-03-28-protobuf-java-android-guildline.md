@@ -1,8 +1,13 @@
 ---
 title: Protobuf在Android下的使用说明
 categories: protobuf
-keywords: 'protobuf,android,使用说明,新手教程'
-tags: protobuf
+keywords: 
+  - protobuf
+  - android
+  - 使用说明
+  - 新手教程
+tags: 
+  - protobuf
 date: 2017-03-28 22:06:12
 ---
 ![](http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/18-2-3/89483667.jpg)

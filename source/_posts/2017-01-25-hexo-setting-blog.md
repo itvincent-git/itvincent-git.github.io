@@ -2,7 +2,13 @@
 title: 构建一个自己的hexo博客
 date: 2017-01-25 18:20:07
 categories: hexo
-keywords: hexo,安装,raytaylorism,github,git,GithubPages
+keywords: 
+  - hexo
+  - 安装
+  - raytaylorism
+  - github
+  - git
+  - GithubPages
 tags:
   - hexo
   - github

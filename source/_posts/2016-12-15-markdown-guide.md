@@ -3,7 +3,12 @@ layout: post
 title:  "使用Sublime Text写markdown"
 date:   2016-12-15 21:50:17 +0800
 categories: markdown
-keywords: markdown,Sublime Text,Package Control,MarkdownEditing,OmniMarkupPreviewer
+keywords: 
+    - markdown
+    - Sublime Text
+    - Package Control
+    - MarkdownEditing
+    - OmniMarkupPreviewer
 tags:
 - markdown
 ---

@@ -3,7 +3,12 @@ layout: post
 title:  "Freeline使用指南"
 date:   2017-01-01 15:00:00 +0800
 categories: android
-keywords: android,freeline,Android Studio,插件,构建
+keywords: 
+    - android
+    - freeline
+    - Android Studio
+    - 插件
+    - 构建
 tags:
 - android
 - freeline

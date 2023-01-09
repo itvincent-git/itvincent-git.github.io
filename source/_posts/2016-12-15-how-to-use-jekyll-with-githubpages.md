@@ -3,7 +3,9 @@ layout: post
 title:  "如何使用jekyll和github pages搭建博客"
 date:   2016-12-15 18:50:17 +0800
 categories: jekyll
-keywords: jekyll,github pages
+keywords: 
+   - jekyll
+   - github pages
 tags:
 - jekyll
 ---

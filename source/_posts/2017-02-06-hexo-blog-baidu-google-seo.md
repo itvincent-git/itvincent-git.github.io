@@ -1,7 +1,15 @@
 ---
 title: 让Hexo站点在百度和Google中被搜索到
 categories: hexo
-keywords: hexo,baidu,google,seo,收录,抓取,排除外链,keywords
+keywords: 
+    - hexo
+    - baidu,
+    - google
+    - seo
+    - 收录
+    - 抓取
+    - 排除外链
+    - keywords
 tags:
   - seo
   - hexo

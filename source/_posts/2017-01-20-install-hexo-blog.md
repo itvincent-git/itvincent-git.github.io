@@ -2,7 +2,11 @@
 title: 安装hexo博客
 date: 2017-01-20 18:20:07
 categories: hexo
-keywords: hexo,安装,git,nodejs
+keywords: 
+  - hexo
+  - 安装
+  - git
+  - nodejs
 tags: 
 - hexo
 - github

@@ -1,7 +1,12 @@
 ---
 title: 绑定博客到自己的godaddy域名
 categories: hexo
-keywords: '自定义域名,godaddy,hexo,github,coding.net'
+keywords: 
+  - 自定义域名
+  - godaddy
+  - hexo
+  - github
+  - coding.net
 tags:
   - hexo
   - github

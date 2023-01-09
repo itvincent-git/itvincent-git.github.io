@@ -3,7 +3,10 @@ layout: post
 title:  "Android的HashMap和ArrayMap对比"
 date:   2016-12-27 15:00:00 +0800
 categories: android
-keywords: android,HashMap,ArrayMap
+keywords: 
+    - android,
+    - HashMap
+    - ArrayMap
 tags:
 - android
 ---

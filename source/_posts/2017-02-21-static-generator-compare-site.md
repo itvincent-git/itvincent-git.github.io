@@ -1,7 +1,10 @@
 ---
 title: 一个静态网站生成工具的对比网站 - Static Generator
 categories: hexo
-keywords: 'staticgen,hexo,jekyll'
+keywords: 
+    - staticgen
+    - hexo
+    - jekyll
 tags: staticgen
 date: 2017-02-21 15:42:17
 ---
