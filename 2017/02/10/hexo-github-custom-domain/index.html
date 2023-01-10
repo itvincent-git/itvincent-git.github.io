@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="绑定博客到自己的Godaddy域名"><meta name="keywords" content="自定义域名,godaddy,hexo,github,coding.net"><meta name="author" content="Vincent Zhong"><meta name="copyright" content="Vincent Zhong"><title>绑定博客到自己的Godaddy域名 | itVincent的博客</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?30d3dbfb50a47458fba322d035b7a241";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-91457181-1', 'auto');
+ga('send', 'pageview');</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Github%E4%B8%8A%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">Github上设置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#godaddy%E4%B8%8A%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">godaddy上配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CNAME"><span class="toc-number">2.1.</span> <span class="toc-text">CNAME</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A"><span class="toc-number">2.2.</span> <span class="toc-text">A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#301%E8%BD%AC%E5%8F%91"><span class="toc-number">2.3.</span> <span class="toc-text">301转发</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-2/7850663-file_1486008757103_5b69.jpg"></div><div class="author-info__name text-center">Vincent Zhong</div><div class="author-info__description text-center">Android,Java,Hexo</div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/itvincent-git">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">24</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">18</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">10</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">友链</div><a class="author-info-links__name text-center" target="_blank" rel="noopener" href="https://kaedea.com/">中二病也要开发 ANDROID</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">itVincent的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">绑定博客到自己的Godaddy域名</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-02-10</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/hexo/">hexo</a><span class="post-meta__separator">|</span><i class="fa fa-comment-o post-meta__icon" aria-hidden="true"></i><a href="/2017/02/10/hexo-github-custom-domain/#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="2017/02/10/hexo-github-custom-domain/"></span></a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><blockquote>
+<p>买了个自己的域名，想把Github Pages绑定到这个域名下。结合了网上的文章及Github Pages的帮助文档，整理出下面的完整设置方式。</p>
+</blockquote>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/godaddy-01.jpg" alt="godaddy"></p>
+<span id="more"></span>
+
+<h1 id="Github上设置"><a href="#Github上设置" class="headerlink" title="Github上设置"></a>Github上设置</h1><p>首先要在Github Pages的仓库上增加一个名叫<code>CNAME</code>的文件，我们可以用我们hexo项目的source目录下增加，内容为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">example.com</span><br></pre></td></tr></table></figure>
+
+<p><code>$ hexo g</code>后，<code>/public/</code>目录下也会有<code>CNAME</code>文件，然后部署到Github Pages的仓库上。</p>
+<p>此时再访问你的<code>http://example.github.io</code>，浏览器就已经跳转到<code>example.com</code>上了。</p>
+<h1 id="godaddy上配置"><a href="#godaddy上配置" class="headerlink" title="godaddy上配置"></a>godaddy上配置</h1><blockquote>
+<p>我们先把<code>www</code>域名解释到Github Pages的服务器上，我们需要配置一个<code>CNAME</code>。</p>
+</blockquote>
+<h2 id="CNAME"><a href="#CNAME" class="headerlink" title="CNAME"></a>CNAME</h2><p>CNAME就是把域名映射到另外一个域名上，这样访问<code>www.example.com</code>就能访问到<code>example.github.io</code>的服务器，浏览器上显示的仍然是<code>www.example.com</code>。如下设置，name是唯一的，你看已有配置里面有就直接修改，没有就新增：</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Value</th>
+<th>TTL Actions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CNAME</td>
+<td>www</td>
+<td>example.github.io</td>
+<td>600s</td>
+</tr>
+</tbody></table>
+<p>完成后隔一段时间等生效，访问<code>www.example.com</code>就已经能看到你的博客了。</p>
+<p>如果着急还可以用<code>dig</code>命令查看dns解释情况：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ dig example.com +nostats +nocomments +nocmd</span><br><span class="line"></span><br><span class="line">; &lt;&lt;&gt;&gt; DiG 9.8.3-P1 &lt;&lt;&gt;&gt; example.com +nostats +nocomments +nocmd</span><br><span class="line">;; global options: +cmd</span><br><span class="line">;example.com.             IN      A</span><br><span class="line">example.com.      3600    IN      A       192.30.252.153</span><br></pre></td></tr></table></figure>
+
+<p>看到ip地址是<code>192.30.252.153</code>或<code>192.30.252.154</code>证明就正确，否则就再等等吧。</p>
+<blockquote>
+<p>只要做到<code>www</code>域生效，其实就可以推广你的站点了，可以看<a href="/2017/02/06/hexo-blog-baidu-google-seo/">让Hexo站点在百度和Google中被搜索到</a>。但如果想要让顶级域名<code>example.com</code>也生效就会复杂一点，可以继续看下面。</p>
+</blockquote>
+<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>由于godaddy不支持顶级域名配置<code>CNAME</code>。有一种办法，通过配置A记录来实现。A记录就是把域名映射到IP上。</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Value</th>
+<th>TTL Actions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.153</td>
+<td>600s</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.154</td>
+<td>600s</td>
+</tr>
+</tbody></table>
+<p><code>@</code>就代表顶级域名，如上把顶级域名绑定到这2个IP上，等生效，或者再用上面<code>dig</code>命令验证，用浏览器查看<code>example.com</code>。</p>
+<blockquote>
+<p>上面这个方法由于绑定到固定的IP上的，例如你想把<code>coding.net</code>的pages服务也换上去的话，就比较难控制了。</p>
+</blockquote>
+<h2 id="301转发"><a href="#301转发" class="headerlink" title="301转发"></a>301转发</h2><p>然而godaddy还支持设置把一个域名301跳转到另外一个域名，所以可以把<code>example.com</code>跳转到<code>www.example.com</code>。</p>
+<p>godaddy在你的域名下配置<code>Forwarding</code>，链接输入<code>www.example.com</code>，选择301，保存。</p>
+<p><strong>用<code>A</code>或者<code>301</code>都是可选操作，大家可以尝试后再决定。</strong></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Vincent Zhong</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/">http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.itvincent.net">itVincent的博客</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a><a class="post-meta__tags" href="/tags/github/">github</a><a class="post-meta__tags" href="/tags/coding-net/">coding.net</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2017/02/21/static-generator-compare-site/"><i class="fa fa-chevron-left">  </i><span>一个静态网站生成工具的对比网站 - Static Generator</span></a></div><div class="next-post pull-right"><a href="/2017/02/06/hexo-blog-baidu-google-seo/"><span>让Hexo站点在百度和Google中被搜索到</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="disqus_thread"></div><script>var unused = null;
+var disqus_config = function () {
+  this.page.url = 'http://www.itvincent.net/2017/02/10/hexo-github-custom-domain/';
+  this.page.identifier = '2017/02/10/hexo-github-custom-domain/';
+  this.page.title = '绑定博客到自己的Godaddy域名';
+}
+var d = document, s = d.createElement('script');
+s.src = "https://" + 'itvincent' +".disqus.com/embed.js";
+s.setAttribute('data-timestamp', '' + +new Date());
+(d.head || d.body).appendChild(s);</script><script id="dsq-count-scr" src="https://itvincent.disqus.com/count.js" async></script></div></div><footer class="footer-bg" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2016 - 2023 By Vincent Zhong</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script src="/js/katex.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>

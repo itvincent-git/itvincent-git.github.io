@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="使用七牛云存储Markdown用的图片"><meta name="keywords" content="qiniu,mardown,图床,极间图床"><meta name="author" content="Vincent Zhong"><meta name="copyright" content="Vincent Zhong"><title>使用七牛云存储Markdown用的图片 | itVincent的博客</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?30d3dbfb50a47458fba322d035b7a241";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-91457181-1', 'auto');
+ga('send', 'pageview');</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A"><span class="toc-number">2.</span> <span class="toc-text">图床</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E7%89%9B%E5%AD%98%E5%82%A8"><span class="toc-number">3.</span> <span class="toc-text">七牛存储</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E5%9B%BE%E5%BA%8A%E4%B8%8A%E8%AE%BE%E7%BD%AE%E4%B8%83%E7%89%9B%E8%B4%A6%E5%8F%B7"><span class="toc-number">4.</span> <span class="toc-text">在图床上设置七牛账号</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-2/7850663-file_1486008757103_5b69.jpg"></div><div class="author-info__name text-center">Vincent Zhong</div><div class="author-info__description text-center">Android,Java,Hexo</div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/itvincent-git">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">24</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">18</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">10</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">友链</div><a class="author-info-links__name text-center" target="_blank" rel="noopener" href="https://kaedea.com/">中二病也要开发 ANDROID</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">itVincent的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">使用七牛云存储Markdown用的图片</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-01-09</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/markdown/">markdown</a><span class="post-meta__separator">|</span><i class="fa fa-comment-o post-meta__icon" aria-hidden="true"></i><a href="/2017/01/09/qiniu-mardown-image/#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="2017/01/09/qiniu-mardown-image/"></span></a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-17/95692112-file_1487333779860_1483d.png" alt="qiniu homepage"></p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>使用md写文章的人，喜欢他的方便性，可移植性，写一个文本就包括了文章及排版。不过图片链接却不是那么方便，每个博客站点都有一些自己的图片上传方式。你想把这篇文章再copy到其他站点，由于源站点会设置图片的防盗链，新的站点上的文章就看不到图片了。为了解决这个问题，ka老师告诉了我一个图床的方式来解决。</p>
+<span id="more"></span>
+<h2 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h2><ol>
+<li><p>首先选择一个图床网站或软件，例如<a target="_blank" rel="noopener" href="http://yotuku.cn/">极间图床</a>。</p>
+</li>
+<li><p>打开站点后，可以把图片拖到这里或选择文件来上传图片。</p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/5155253-file_1483963360014_7779.png"></p>
+</li>
+<li><p>上传完后，在下面会出现链接，可以直接复制链接，或者点击复制markdown链接。</p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/85911607-file_1483963456256_11ddb.png"></p>
+</li>
+</ol>
+<p>不过由于这个服务上传的地址是一个公用的地址，有可能被删除或失效。因此极简图床也提供给我们自己设置七牛空间来上传图片。</p>
+<h2 id="七牛存储"><a href="#七牛存储" class="headerlink" title="七牛存储"></a>七牛存储</h2><ol>
+<li><p>首先打开<a target="_blank" rel="noopener" href="http://qiniu.com/">七牛站点</a>。注册一个账号，输入邮箱、手机、姓名等身份认证之后完成注册。</p>
+</li>
+<li><p>然后创建一个对象储存。</p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/75752041-file_1483964119462_509c.png"></p>
+</li>
+<li><p>自己起一个空间名称，区域选择自己附近的，访问控制选择“公开空间”。</p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/52203369-file_1483964002644_706.png"></p>
+</li>
+<li><p>在“个人面板”-&gt;“密钥管理”中查看AccessKey&#x2F;SecretKey。</p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/63087181-file_1483964002789_c3e8.png"></p>
+</li>
+<li><p>在储存空间的“空间概览”里，记住这里的“测试域名”</p>
+<p> <img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/20046002-file_1483964605921_e3f8.png"></p>
+</li>
+</ol>
+<h2 id="在图床上设置七牛账号"><a href="#在图床上设置七牛账号" class="headerlink" title="在图床上设置七牛账号"></a>在图床上设置七牛账号</h2><p>在极简图床上配置上刚才七牛储存的“空间名称”、“AccessKey”、“SecretKey”、“域名”后，保存。然后就可以上传到自己专属的七牛空间上了。</p>
+<p><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-1-9/44269451-file_1483964002921_bea1.png"></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Vincent Zhong</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://www.itvincent.net/2017/01/09/qiniu-mardown-image/">http://www.itvincent.net/2017/01/09/qiniu-mardown-image/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.itvincent.net">itVincent的博客</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/markdown/">markdown</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2017/01/13/android-ndk-old-version/"><i class="fa fa-chevron-left">  </i><span>如何下载旧的Android NDK版本</span></a></div><div class="next-post pull-right"><a href="/2017/01/01/freeline-guide/"><span>Freeline使用指南</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="disqus_thread"></div><script>var unused = null;
+var disqus_config = function () {
+  this.page.url = 'http://www.itvincent.net/2017/01/09/qiniu-mardown-image/';
+  this.page.identifier = '2017/01/09/qiniu-mardown-image/';
+  this.page.title = '使用七牛云存储Markdown用的图片';
+}
+var d = document, s = d.createElement('script');
+s.src = "https://" + 'itvincent' +".disqus.com/embed.js";
+s.setAttribute('data-timestamp', '' + +new Date());
+(d.head || d.body).appendChild(s);</script><script id="dsq-count-scr" src="https://itvincent.disqus.com/count.js" async></script></div></div><footer class="footer-bg" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2016 - 2023 By Vincent Zhong</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script src="/js/katex.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
