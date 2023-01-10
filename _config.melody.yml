@@ -82,7 +82,7 @@ mathjax:
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#katex
 # ---------------
 katex:
-  enable: false
+  enable: true
   cdn:
     css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
   hide_scrollbar: true
@@ -93,10 +93,12 @@ fireworks: false
 
 # Analysis
 # ---------------
-baidu_analytics:
+# baidu_analytics:
+baidu_analytics: 30d3dbfb50a47458fba322d035b7a241
 # Format: UA-xxxxxxxxx-x
 # Example: UA-123456789-0
-google_analytics:
+# google_analytics:
+google_analytics: UA-91457181-1
 # Format: G-xxxxxxxxx
 # Example: G-0A12345678
 google_analytics_MeasurementID:
@@ -214,9 +216,9 @@ addThis:
 # Comments System
 # ---------------
 disqus:
-  enable: false
-  #shortname:
-  #count:
+  enable: true
+  shortname: itvincent
+  count: true
 
 # laibili:
 # enable: false
@@ -272,9 +274,11 @@ disqus:
 
 # Footer Settings
 # ---------------
-since: 2013
+since: 2016
 
 # footer_custom_text: put custom text directly or put hitokoto to fetch random texts
+# 页脚文字
+footer_custom_text: hitokoto
 
 ICP:
   enable: false
