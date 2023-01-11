@@ -1,9 +1,9 @@
-## 安装 Hexo
+# 安装 Hexo
 所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。
 `$ npm install -g hexo-cli`
 
-## 安装
-### Hexo 版本 >= 5.0 theme-melody v1.8.0+
+# 安装 melody
+## Hexo 版本 >= 5.0 theme-melody v1.8.0+
 
 进入你的 hexo 博客的工作路径
 
@@ -36,3 +36,11 @@ theme: melody # 将主题设置成melody
 3.  如果你是 `hexo-theme-melody` 的老用户，请将 `melody.yml` 的内容拷贝至 `_config.melody.yml`，然后将 `melody.yml` 删掉，因为它将会被废弃。
 
 之后你就只需要通过`npm update hexo-theme-melody` 来平滑升级 `theme-melody` 了
+
+# 安装baidu sitemap
+在`/public` 下生成`baidusitemap.xml`
+`npm install hexo-generator-baidu-sitemap`
+
+# 安装google sitemap
+在`/public` 下生成`sitemap.xml`
+`npm install hexo-generator-sitemap`
