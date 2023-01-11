@@ -206,8 +206,8 @@ slide:
 # Share System
 # ---------------
 addThis:
-  enable: false
-  #pubid:
+  enable: true
+  pubid: ra-63be68e5419fe69e
 
 # sharejs:
 # enable: false
