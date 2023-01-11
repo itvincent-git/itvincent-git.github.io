@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.itvincent.net/2018/03/05/gitment-intro/</loc>
+    <lastmod>2023-01-11</lastmod>
+  </url>
+  <url>
+    <loc>http://www.itvincent.net/2018/03/06/unused-resource-explorer/</loc>
+    <lastmod>2023-01-11</lastmod>
+  </url>
+  <url>
+    <loc>http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
+    <lastmod>2023-01-11</lastmod>
+  </url>
+  <url>
+    <loc>http://www.itvincent.net/2023/01/11/update-website-theme/</loc>
+    <lastmod>2023-01-11</lastmod>
+  </url>
+  <url>
     <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
     <lastmod>2023-01-11</lastmod>
   </url>
@@ -82,18 +98,6 @@
   </url>
   <url>
     <loc>http://www.itvincent.net/2018/03/02/fast-delete/</loc>
-    <lastmod>2023-01-11</lastmod>
-  </url>
-  <url>
-    <loc>http://www.itvincent.net/2018/03/05/gitment-intro/</loc>
-    <lastmod>2023-01-11</lastmod>
-  </url>
-  <url>
-    <loc>http://www.itvincent.net/2018/03/06/unused-resource-explorer/</loc>
-    <lastmod>2023-01-11</lastmod>
-  </url>
-  <url>
-    <loc>http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
     <lastmod>2023-01-11</lastmod>
   </url>
 </urlset> 
