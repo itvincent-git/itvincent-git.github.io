@@ -6,10 +6,5 @@ Allow: /tags/
 Allow: /archives/
 Allow: /page/
 
-Disallow: /js/
-Disallow: /css/
-Disallow: /images/
-Disallow: /lib/
-
 Sitemap: http://www.itvincent.net/sitemap.xml
 Sitemap: http://www.itvincent.net/baidusitemap.xml
