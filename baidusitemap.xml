@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
-    <lastmod>2023-02-01</lastmod>
-  </url>
-  <url>
     <loc>http://www.itvincent.net/2016/12/15/markdown-guide/</loc>
     <lastmod>2023-02-01</lastmod>
   </url>
@@ -98,6 +94,14 @@
   </url>
   <url>
     <loc>http://www.itvincent.net/2023/01/11/update-website-theme/</loc>
+    <lastmod>2023-02-01</lastmod>
+  </url>
+  <url>
+    <loc>http://www.itvincent.net/2023/02/01/the-new-logcat-in-android-studio-electric-eel/</loc>
+    <lastmod>2023-02-01</lastmod>
+  </url>
+  <url>
+    <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
     <lastmod>2023-02-01</lastmod>
   </url>
 </urlset> 

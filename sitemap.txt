@@ -1,4 +1,3 @@
-http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/
 http://www.itvincent.net/2016/12/15/markdown-guide/
 http://www.itvincent.net/2016/12/27/hashmap-arraymap/
 http://www.itvincent.net/2017/01/01/freeline-guide/
@@ -23,12 +22,15 @@ http://www.itvincent.net/2018/03/05/gitment-intro/
 http://www.itvincent.net/2018/03/06/unused-resource-explorer/
 http://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/
 http://www.itvincent.net/2023/01/11/update-website-theme/
+http://www.itvincent.net/2023/02/01/the-new-logcat-in-android-studio-electric-eel/
 http://www.itvincent.net/categories/index.html
 http://www.itvincent.net/tags/index.html
+http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/
 http://www.itvincent.net/404.html
 http://www.itvincent.net/404.html
 http://www.itvincent.net/
 http://www.itvincent.net/tags/android/
+http://www.itvincent.net/tags/logcat/
 http://www.itvincent.net/tags/jekyll/
 http://www.itvincent.net/tags/markdown/
 http://www.itvincent.net/tags/freeline/
@@ -46,6 +48,7 @@ http://www.itvincent.net/tags/nodejs/
 http://www.itvincent.net/tags/gitment/
 http://www.itvincent.net/tags/Intellij-Plugin/
 http://www.itvincent.net/tags/kotlin/
+http://www.itvincent.net/tags/android-studio/
 http://www.itvincent.net/categories/android/
 http://www.itvincent.net/categories/jekyll/
 http://www.itvincent.net/categories/markdown/

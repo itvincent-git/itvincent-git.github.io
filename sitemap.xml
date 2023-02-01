@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
-    
-    <lastmod>2023-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://www.itvincent.net/2016/12/15/markdown-guide/</loc>
     
     <lastmod>2023-02-01</lastmod>
@@ -227,6 +218,15 @@
   </url>
   
   <url>
+    <loc>http://www.itvincent.net/2023/02/01/the-new-logcat-in-android-studio-electric-eel/</loc>
+    
+    <lastmod>2023-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.itvincent.net/categories/index.html</loc>
     
     <lastmod>2023-02-01</lastmod>
@@ -237,6 +237,15 @@
   
   <url>
     <loc>http://www.itvincent.net/tags/index.html</loc>
+    
+    <lastmod>2023-02-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
     
     <lastmod>2023-02-01</lastmod>
     
@@ -273,6 +282,13 @@
   
   <url>
     <loc>http://www.itvincent.net/tags/android/</loc>
+    <lastmod>2023-02-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.itvincent.net/tags/logcat/</loc>
     <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -392,6 +408,13 @@
   
   <url>
     <loc>http://www.itvincent.net/tags/kotlin/</loc>
+    <lastmod>2023-02-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.itvincent.net/tags/android-studio/</loc>
     <lastmod>2023-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
