@@ -41,7 +41,7 @@ FastDelete是一个快速删除文件夹的工具，基于nodejs里文件操作�
 
 - 在文件夹的右键菜单中，点击**极速删除**，即可删除该目录
 
-  ![image](http://upload-images.jianshu.io/upload_images/8375846-09eab080a9c642bf?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202302222006440.png)
 
 
 
