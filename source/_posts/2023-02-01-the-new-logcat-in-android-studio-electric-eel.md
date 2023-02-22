@@ -1,6 +1,7 @@
 ---
 title: The New Logcat in Android Studio Electric Eel(电鳗)
 date: 2023-02-01 18:36:50
+categories: android
 tags:
     - android
     - android studio
