@@ -6,5 +6,5 @@ Allow: /tags/
 Allow: /archives/
 Allow: /page/
 
-Sitemap: http://www.itvincent.net/sitemap.xml
-Sitemap: http://www.itvincent.net/baidusitemap.xml
+Sitemap: https://www.itvincent.net/sitemap.xml
+Sitemap: https://www.itvincent.net/baidusitemap.xml
