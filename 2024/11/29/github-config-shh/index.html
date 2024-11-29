@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="如何为 GitHub 配置 SSH 密钥"><meta name="keywords" content="github,ssh,macos"><meta name="author" content="Vincent Zhong"><meta name="copyright" content="Vincent Zhong"><title>如何为 GitHub 配置 SSH 密钥 | itVincent的博客</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?30d3dbfb50a47458fba322d035b7a241";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-91457181-1', 'auto');
+ga('send', 'pageview');</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA-SSH-%E5%AF%86%E9%92%A5"><span class="toc-number">1.</span> <span class="toc-text">1. 创建 SSH 密钥</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8-ED25519-%E7%AE%97%E6%B3%95%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5"><span class="toc-number">1.1.</span> <span class="toc-text">推荐使用 ED25519 算法生成密钥</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B0%86-SSH-%E5%AF%86%E9%92%A5%E6%B7%BB%E5%8A%A0%E5%88%B0-ssh-agent"><span class="toc-number">2.</span> <span class="toc-text">2. 将 SSH 密钥添加到 ssh-agent</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">步骤：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%9C%A8-GitHub-%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84-SSH-%E5%85%AC%E9%92%A5"><span class="toc-number">3.</span> <span class="toc-text">3. 在 GitHub 中添加新的 SSH 公钥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%B5%8B%E8%AF%95-SSH-%E8%BF%9E%E6%8E%A5"><span class="toc-number">4.</span> <span class="toc-text">4. 测试 SSH 连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93"><span class="toc-number">5.</span> <span class="toc-text">5. 克隆仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E6%8F%90%E7%A4%BA"><span class="toc-number">6.</span> <span class="toc-text">附加提示</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-2/7850663-file_1486008757103_5b69.jpg"></div><div class="author-info__name text-center">Vincent Zhong</div><div class="author-info__description text-center">Android,Java,Hexo</div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/itvincent-git">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">30</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">26</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">11</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">友链</div><a class="author-info-links__name text-center" target="_blank" rel="noopener" href="https://kaedea.com/">中二病也要开发 ANDROID</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">itVincent的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">如何为 GitHub 配置 SSH 密钥</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2024-11-29</time><span class="post-meta__separator">|</span><i class="fa fa-comment-o post-meta__icon" aria-hidden="true"></i><a href="/2024/11/29/github-config-shh/#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="2024/11/29/github-config-shh/"></span></a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>在使用 GitHub 执行 <code>pull</code>、<code>push</code> 或 <code>fetch</code> 等操作时，如果提示“权限不足”:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">OpenSSH_8.1p1, LibreSSL 2.7.3</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">debug1: Reading configuration data /Users/YOU/.ssh/config</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">debug1: Reading configuration data /etc/ssh/ssh_config</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">debug1: /etc/ssh/ssh_config line 47: Applying options <span class="keyword">for</span> *</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">debug1: Connecting to github.com port 22.</span></span><br></pre></td></tr></table></figure>
+
+<p>可能需要配置 SSH 密钥来建立安全连接。以下步骤基于 macOS 系统。</p>
+<hr>
+<span id="more"></span>
+
+<h3 id="1-创建-SSH-密钥"><a href="#1-创建-SSH-密钥" class="headerlink" title="1. 创建 SSH 密钥"></a><strong>1. 创建 SSH 密钥</strong></h3><h4 id="推荐使用-ED25519-算法生成密钥"><a href="#推荐使用-ED25519-算法生成密钥" class="headerlink" title="推荐使用 ED25519 算法生成密钥"></a>推荐使用 ED25519 算法生成密钥</h4><p>ED25519 是一种更安全且现代的算法，建议优先使用。如果您的系统较旧且不支持 ED25519，则可以选择 RSA 算法。</p>
+<p>运行以下命令生成密钥：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>如果需要使用 RSA：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>系统提示时按如下步骤操作：</p>
+<ol>
+<li><p><strong>设置密钥保存路径</strong><br>当看到以下提示时，直接按 <code>Enter</code> 使用默认路径即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">Enter a file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/YOU/.ssh/id_ALGORITHM): [Press enter]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>设置访问密码</strong>（可选）<br>系统会提示设置访问密码，但可以直接跳过，不填写：</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">Enter passphrase (empty <span class="keyword">for</span> no passphrase): [Type a passphrase]</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">Enter same passphrase again: [Type passphrase again]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-将-SSH-密钥添加到-ssh-agent"><a href="#2-将-SSH-密钥添加到-ssh-agent" class="headerlink" title="2. 将 SSH 密钥添加到 ssh-agent"></a><strong>2. 将 SSH 密钥添加到 ssh-agent</strong></h3><blockquote>
+<p><strong>背景知识：</strong><br><code>ssh-agent</code> 是 SSH 的一个组件，主要用于管理私钥，帮助用户自动完成公钥认证，从而避免重复输入密码。</p>
+</blockquote>
+<h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a><strong>步骤：</strong></h4><ol>
+<li><p><strong>启动 <code>ssh-agent</code></strong><br>使用以下命令启动 <code>ssh-agent</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">eval</span> <span class="string">&quot;<span class="subst">$(ssh-agent -s)</span>&quot;</span></span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">Agent pid 90076</span></span><br></pre></td></tr></table></figure>
+
+<p>返回类似以下内容，表示启动成功：</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">Agent pid 90076</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p><strong>配置自动加载密钥</strong><br>如果您使用的是 macOS Sierra 10.12.2 或更高版本，请编辑 <code>~/.ssh/config</code> 文件，添加以下内容：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  AddKeysToAgent yes</span><br><span class="line">  UseKeychain yes</span><br><span class="line">  IdentityFile ~/.ssh/id_ed25519</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>说明：</strong></p>
+<ul>
+<li><code>AddKeysToAgent yes</code>：允许将密钥添加到 <code>ssh-agent</code>。</li>
+<li><code>UseKeychain yes</code>：启用 macOS 钥匙串管理密码。</li>
+<li><code>IdentityFile</code>：指定您的私钥文件路径。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>将密钥添加到 <code>ssh-agent</code> 并存储密码</strong><br>使用以下命令添加私钥并将密码存储到钥匙串中：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add --apple-use-keychain ~/.ssh/id_ed25519</span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<h3 id="3-在-GitHub-中添加新的-SSH-公钥"><a href="#3-在-GitHub-中添加新的-SSH-公钥" class="headerlink" title="3. 在 GitHub 中添加新的 SSH 公钥"></a><strong>3. 在 GitHub 中添加新的 SSH 公钥</strong></h3><ol>
+<li><p><strong>复制 SSH 公钥</strong><br>使用以下命令将公钥复制到剪贴板：</p>
+<p><code>pbcopy &lt; ~/.ssh/id_ed25519.pub</code></p>
+</li>
+<li><p><strong>在 GitHub 中添加公钥</strong></p>
+<ol>
+<li>打开 GitHub 网站，单击右上角的头像，进入 <strong>Settings</strong>。</li>
+<li>在左侧菜单的 “Access” 部分，点击 <strong>SSH and GPG keys</strong>。</li>
+<li>点击 <strong>New SSH key</strong>。</li>
+<li>在 <strong>Title</strong> 输入框中，为此密钥命名（例如：MacBook Pro SSH Key）。</li>
+<li>将之前复制的公钥粘贴到 <strong>Key</strong> 输入框中。</li>
+<li>点击 <strong>Add SSH key</strong> 保存。</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h3 id="4-测试-SSH-连接"><a href="#4-测试-SSH-连接" class="headerlink" title="4. 测试 SSH 连接"></a><strong>4. 测试 SSH 连接</strong></h3><p>使用以下命令测试 SSH 连接是否正常：</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>如果配置正确，您会看到如下信息：</p>
+<p><code>Hi USERNAME! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></p>
+<hr>
+<h3 id="5-克隆仓库"><a href="#5-克隆仓库" class="headerlink" title="5. 克隆仓库"></a><strong>5. 克隆仓库</strong></h3><p>验证配置是否成功，尝试从 GitHub 克隆一个仓库：</p>
+<p><code>git clone git@github.com:GITHUBID/REPOSITORY_NAME.git</code></p>
+<p>如果克隆成功，说明您的 SSH 配置已正确完成！ 🎉</p>
+<hr>
+<h3 id="附加提示"><a href="#附加提示" class="headerlink" title="附加提示"></a><strong>附加提示</strong></h3><ul>
+<li>建议定期更新 SSH 密钥，提升安全性。</li>
+<li>如果遇到问题，可检查 <code>~/.ssh/config</code> 文件是否正确配置，或参考 GitHub 官方文档。</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Vincent Zhong</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://www.itvincent.net/2024/11/29/github-config-shh/">http://www.itvincent.net/2024/11/29/github-config-shh/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://www.itvincent.net">itVincent的博客</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/github/">github</a><a class="post-meta__tags" href="/tags/ssh/">ssh</a><a class="post-meta__tags" href="/tags/macos/">macos</a></div><div class="addthis_inline_share_toolbox pull-right"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63be68e5419fe69e" async></script><nav id="pagination"><div class="next-post pull-right"><a href="/2024/01/12/docker-centos-node-error/"><span>🚀 Docker解锁：解决在CentOS服务器上运行Node.js时的线程创建错误</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="disqus_thread"></div><script>var unused = null;
+var disqus_config = function () {
+  this.page.url = 'http://www.itvincent.net/2024/11/29/github-config-shh/';
+  this.page.identifier = '2024/11/29/github-config-shh/';
+  this.page.title = '如何为 GitHub 配置 SSH 密钥';
+}
+var d = document, s = d.createElement('script');
+s.src = "https://" + 'itvincent' +".disqus.com/embed.js";
+s.setAttribute('data-timestamp', '' + +new Date());
+(d.head || d.body).appendChild(s);</script><script id="dsq-count-scr" src="https://itvincent.disqus.com/count.js" async></script></div></div><footer class="footer-bg" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2016 - 2024 By Vincent Zhong</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script src="/js/katex.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
