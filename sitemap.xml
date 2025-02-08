@@ -2,63 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
+    <loc>https://www.itvincent.net/2025/02/08/immersive-translate-ollama-qwen25/</loc>
     
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2023/01/11/update-website-theme/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2023/02/01/the-new-logcat-in-android-studio-electric-eel/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2023/02/22/chrome-ERR-SSL-PROTOCOL-ERROR/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2024/01/11/github-ssh-key/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2024/01/12/docker-centos-node-error/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2024/11/29/github-config-shh/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,7 +13,7 @@
   <url>
     <loc>https://www.itvincent.net/categories/index.html</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,151 +22,7 @@
   <url>
     <loc>https://www.itvincent.net/tags/index.html</loc>
     
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2016/12/15/markdown-guide/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2016/12/27/hashmap-arraymap/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/01/01/freeline-guide/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/01/09/qiniu-mardown-image/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/01/13/android-ndk-old-version/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/01/20/install-hexo-blog/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/01/25/hexo-setting-blog/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/01/28/github-404/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/02/06/hexo-blog-baidu-google-seo/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/02/06/hexo-deploy-github-coding/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/02/21/static-generator-compare-site/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/02/24/svn-ignore/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/03/07/gradle-dependencies-tree/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/2017/03/28/protobuf-java-android-guildline/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -229,7 +31,7 @@
   <url>
     <loc>https://www.itvincent.net/2017/04/04/protobuf-principle/</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -238,7 +40,7 @@
   <url>
     <loc>https://www.itvincent.net/2017/04/26/android-rename-packagename/</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -247,7 +49,7 @@
   <url>
     <loc>https://www.itvincent.net/2017/09/12/protobuf-gradle-plugin/</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -256,7 +58,7 @@
   <url>
     <loc>https://www.itvincent.net/2017/11/28/gradle-sync-fail/</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -265,7 +67,7 @@
   <url>
     <loc>https://www.itvincent.net/2018/03/02/fast-delete/</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -274,7 +76,7 @@
   <url>
     <loc>https://www.itvincent.net/2018/03/05/gitment-intro/</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -283,7 +85,214 @@
   <url>
     <loc>https://www.itvincent.net/2018/03/06/unused-resource-explorer/</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2018/10/24/kotlin-no-double-exclamation/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2023/01/11/update-website-theme/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2023/02/01/the-new-logcat-in-android-studio-electric-eel/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2024/01/11/github-ssh-key/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2023/02/22/chrome-ERR-SSL-PROTOCOL-ERROR/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2024/01/12/docker-centos-node-error/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2024/11/29/github-config-shh/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/01/01/freeline-guide/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/01/09/qiniu-mardown-image/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/01/13/android-ndk-old-version/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/01/20/install-hexo-blog/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/01/28/github-404/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/01/25/hexo-setting-blog/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/02/06/hexo-blog-baidu-google-seo/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/02/06/hexo-deploy-github-coding/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/02/10/hexo-github-custom-domain/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/02/21/static-generator-compare-site/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/02/24/svn-ignore/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/03/07/gradle-dependencies-tree/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2017/03/28/protobuf-java-android-guildline/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2016/12/15/how-to-use-jekyll-with-githubpages/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2016/12/15/markdown-guide/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/2016/12/27/hashmap-arraymap/</loc>
+    
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -292,7 +301,7 @@
   <url>
     <loc>https://www.itvincent.net/404.html</loc>
     
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -301,7 +310,7 @@
 
   <url>
     <loc>https://www.itvincent.net/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -309,182 +318,238 @@
   
   <url>
     <loc>https://www.itvincent.net/tags/android/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/logcat/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/jekyll/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/markdown/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/freeline/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/%E6%9E%84%E5%BB%BA/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/ndk/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/hexo/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/github/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/seo/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/coding-net/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/staticgen/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/svn/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/gradle/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/protobuf/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/nodejs/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/gitment/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/Intellij-Plugin/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/kotlin/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/android-studio/</loc>
-    <lastmod>2024-11-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.itvincent.net/tags/chrome/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/ssh/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/chrome/</loc>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/docker/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/node/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/centos/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/tags/macos/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/%E6%9C%AC%E5%9C%B0%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/AI%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/Ollama%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/Qwen2-5/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/tags/%E5%BC%80%E6%BA%90AI%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -493,77 +558,105 @@
   
   <url>
     <loc>https://www.itvincent.net/categories/android/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/jekyll/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/markdown/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/hexo/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/github/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/svn/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/gradle/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/protobuf/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/windows/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/kotlin/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.itvincent.net/categories/tools/</loc>
-    <lastmod>2024-11-29</lastmod>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/categories/AI/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/categories/AI/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/categories/AI/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.itvincent.net/categories/AI/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2025-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

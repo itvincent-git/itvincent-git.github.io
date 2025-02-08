@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="零成本构建浏览器AI翻译工作站：Ollama+Qwen2.5本地化部署实战指南"><meta name="keywords" content="本地大模型,AI翻译,Ollama教程,Qwen2.5,沉浸式翻译,隐私保护,浏览器自动化,开源AI部署"><meta name="author" content="Vincent Zhong"><meta name="copyright" content="Vincent Zhong"><title>零成本构建浏览器AI翻译工作站：Ollama+Qwen2.5本地化部署实战指南 | itVincent的博客</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?30d3dbfb50a47458fba322d035b7a241";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-91457181-1', 'auto');
+ga('send', 'pageview');</script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9Qwen2-5%E6%9C%AC%E5%9C%B0%E7%BF%BB%E8%AF%91%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">一、为什么选择Qwen2.5本地翻译？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%89%E6%AD%A5%E6%9B%B2"><span class="toc-number">2.</span> <span class="toc-text">二、环境搭建三步曲</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%AE%89%E8%A3%85%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 安装沉浸式翻译插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E9%83%A8%E7%BD%B2ollama%E6%9C%8D%E5%8A%A1%EF%BC%88%E6%8E%A8%E8%8D%90%E5%AE%98%E6%96%B9%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 部署ollama服务（推荐官方安装包）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E8%8E%B7%E5%8F%96Qwen2-5%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 获取Qwen2.5模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%BF%BB%E8%AF%91%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3"><span class="toc-number">3.</span> <span class="toc-text">三、沉浸式翻译配置详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E6%9C%AC%E5%9C%B0API%E5%AF%B9%E6%8E%A5"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 本地API对接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%A7%E8%83%BD%E5%8A%A0%E9%80%9F%E6%96%B9%E6%A1%88"><span class="toc-number">4.</span> <span class="toc-text">四、性能加速方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E7%A1%AC%E4%BB%B6%E5%8A%A0%E9%80%9F%E9%85%8D%E7%BD%AE"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 硬件加速配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96%E6%8A%80%E5%B7%A7"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 内存优化技巧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%8A%80%E6%9C%AF%E4%BA%AE%E7%82%B9%E8%A7%A3%E6%9E%90"><span class="toc-number">5.</span> <span class="toc-text">五、技术亮点解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-Qwen2-5%E6%A0%B8%E5%BF%83%E4%BC%98%E5%8A%BF"><span class="toc-number">5.1.</span> <span class="toc-text">5.1 Qwen2.5核心优势</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.2.</span> <span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97"><span class="toc-number">6.</span> <span class="toc-text">六、故障排查指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E6%9C%8D%E5%8A%A1%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8"><span class="toc-number">6.1.</span> <span class="toc-text">6.1 服务连接异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E6%98%BE%E5%AD%98%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88"><span class="toc-number">6.2.</span> <span class="toc-text">6.2 显存优化方案</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/17-2-2/7850663-file_1486008757103_5b69.jpg"></div><div class="author-info__name text-center">Vincent Zhong</div><div class="author-info__description text-center">Android,Java,Hexo</div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/itvincent-git">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">31</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">34</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">15</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">友链</div><a class="author-info-links__name text-center" target="_blank" rel="noopener" href="https://kaedea.com/">中二病也要开发 ANDROID</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">itVincent的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">零成本构建浏览器AI翻译工作站：Ollama+Qwen2.5本地化部署实战指南</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2025-02-08</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/AI/">AI</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/AI/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8/">人工智能应用</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/AI/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97/">隐私计算</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/AI/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91/">浏览器扩展开发</a><span class="post-meta__separator">|</span><i class="fa fa-comment-o post-meta__icon" aria-hidden="true"></i><a href="/2025/02/08/immersive-translate-ollama-qwen25/#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="2025/02/08/immersive-translate-ollama-qwen25/"></span></a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><blockquote>
+<p>在Chrome沉浸式翻译中运行本地大模型：用ollama+Qwen2.5实现AI翻译。</p>
+<p>从插件配置到模型调优，打造隐私安全的沉浸式翻译生态。</p>
+</blockquote>
+<p><img src="https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202502082036637.png"></p>
+<h2 id="一、为什么选择Qwen2-5本地翻译？"><a href="#一、为什么选择Qwen2-5本地翻译？" class="headerlink" title="一、为什么选择Qwen2.5本地翻译？"></a>一、为什么选择Qwen2.5本地翻译？</h2><p>在隐私保护与AI性能并重的时代，Qwen2.5+Ollama的组合带来全新体验：</p>
+<ul>
+<li><strong>零数据外传</strong>：全程本地运行保障隐私安全</li>
+<li><strong>开源免费</strong>：ollama开源框架 + Qwen2.5</li>
+<li><strong>业界领先性能</strong>：128k上下文窗口 + 中英双语优化</li>
+<li><strong>完全免费使用</strong>：ollama开源免费，Qwen2.5可免费商用</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="二、环境搭建三步曲"><a href="#二、环境搭建三步曲" class="headerlink" title="二、环境搭建三步曲"></a>二、环境搭建三步曲</h2><h3 id="2-1-安装沉浸式翻译插件"><a href="#2-1-安装沉浸式翻译插件" class="headerlink" title="2.1 安装沉浸式翻译插件"></a>2.1 安装沉浸式翻译插件</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 访问[<span class="string">Chrome应用商店</span>](<span class="link">https://chrome.google.com</span>)</span><br><span class="line"><span class="bullet">2.</span> 搜索&quot;Immersive Translate&quot;</span><br><span class="line"><span class="bullet">3.</span> 点击&quot;Add to Chrome&quot;完成安装</span><br><span class="line"><span class="bullet">4.</span> 在扩展栏激活插件图标</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-部署ollama服务（推荐官方安装包）"><a href="#2-2-部署ollama服务（推荐官方安装包）" class="headerlink" title="2.2 部署ollama服务（推荐官方安装包）"></a>2.2 部署ollama服务（推荐官方安装包）</h3><p><strong>跨平台安装指南：</strong></p>
+<ol>
+<li><p>访问<a target="_blank" rel="noopener" href="https://ollama.ai/download">Ollama官网</a>下载：</p>
+<ul>
+<li>Windows：<code>OllamaSetup.exe</code>（双击安装）</li>
+<li>macOS：<code>Ollama-darwin.zip</code>（解压到Applications）</li>
+<li>Linux：<code>ollama-linux-xxx</code>（赋予执行权限后运行）</li>
+</ul>
+</li>
+<li><p>验证安装成功：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ollama --version  <span class="comment"># 应显示ollama version 0.1.xx</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动后台服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ollama serve &amp;  <span class="comment"># Linux/macOS后台运行</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="2-3-获取Qwen2-5模型"><a href="#2-3-获取Qwen2-5模型" class="headerlink" title="2.3 获取Qwen2.5模型"></a>2.3 获取Qwen2.5模型</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 基础版（8GB显存推荐）</span></span><br><span class="line">ollama pull qwen2.5:7b</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 旗舰版（需24GB显存）</span></span><br><span class="line">ollama pull qwen2.5:72b</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、沉浸式翻译配置详解"><a href="#三、沉浸式翻译配置详解" class="headerlink" title="三、沉浸式翻译配置详解"></a>三、沉浸式翻译配置详解</h2><h3 id="3-1-本地API对接"><a href="#3-1-本地API对接" class="headerlink" title="3.1 本地API对接"></a>3.1 本地API对接</h3><ol>
+<li><p>点击插件图标 → 齿轮设置 → 翻译服务</p>
+</li>
+<li><p>选择”Open AI”，打开开关，点击去修改</p>
+</li>
+<li><p>填写关键参数：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">API Endpoint:</span> <span class="string">http://localhost:11434/v1/chat/completions</span></span><br><span class="line"><span class="attr">Model Name:</span> <span class="string">qwen2.5:7b</span>  <span class="comment"># 与下载模型一致</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="四、性能加速方案"><a href="#四、性能加速方案" class="headerlink" title="四、性能加速方案"></a>四、性能加速方案</h2><h3 id="4-1-硬件加速配置"><a href="#4-1-硬件加速配置" class="headerlink" title="4.1 硬件加速配置"></a>4.1 硬件加速配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># NVIDIA显卡加速（需安装CUDA 12+）</span></span><br><span class="line">OLLAMA_CUDA_DOCKER=1 ollama run qwen2.5:7b</span><br><span class="line"></span><br><span class="line"><span class="comment"># Apple Silicon Metal加速</span></span><br><span class="line">CMAKE_ARGS=<span class="string">&quot;-DLLAMA_METAL=on&quot;</span> OLLAMA_GPU_LAYER=99 ollama serve</span><br><span class="line"></span><br><span class="line"><span class="comment"># Intel核显优化</span></span><br><span class="line">OLLAMA_GPU_LAYER=12 OLLAMA_NUM_GPU=1 ollama serve</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-内存优化技巧"><a href="#4-2-内存优化技巧" class="headerlink" title="4.2 内存优化技巧"></a>4.2 内存优化技巧</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Windows系统设置虚拟缓存</span></span><br><span class="line">setx OLLAMA_MAX_VRAM <span class="string">&quot;%50&quot;</span>  <span class="comment"># 限制显存使用比例</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Linux/Mac内存交换优化</span></span><br><span class="line">sudo sysctl vm.swappiness=10  <span class="comment"># 减少交换频率</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="五、技术亮点解析"><a href="#五、技术亮点解析" class="headerlink" title="五、技术亮点解析"></a>五、技术亮点解析</h2><h3 id="5-1-Qwen2-5核心优势"><a href="#5-1-Qwen2-5核心优势" class="headerlink" title="5.1 Qwen2.5核心优势"></a>5.1 Qwen2.5核心优势</h3><table>
+<thead>
+<tr>
+<th>特性</th>
+<th>传统翻译API</th>
+<th>Qwen2.5-7B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>隐私安全</td>
+<td>❌ 云端传输</td>
+<td>✅ 本地处理</td>
+</tr>
+<tr>
+<td>长文本支持</td>
+<td>≤2k tokens</td>
+<td>128k tokens</td>
+</tr>
+<tr>
+<td>术语一致性</td>
+<td>随机波动</td>
+<td>精准控制</td>
+</tr>
+<tr>
+<td>格式保留</td>
+<td>常丢失格式</td>
+<td>完美保留</td>
+</tr>
+<tr>
+<td>离线可用</td>
+<td>依赖网络</td>
+<td>完全离线</td>
+</tr>
+</tbody></table>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="六、故障排查指南"><a href="#六、故障排查指南" class="headerlink" title="六、故障排查指南"></a>六、故障排查指南</h2><h3 id="6-1-服务连接异常"><a href="#6-1-服务连接异常" class="headerlink" title="6.1 服务连接异常"></a>6.1 服务连接异常</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 诊断命令流程</span></span><br><span class="line">ping localhost → 检查ollama进程 → 查看11434端口占用</span><br><span class="line">netstat -ano | findstr :11434  <span class="comment"># Windows</span></span><br><span class="line">lsof -i :11434                 <span class="comment"># macOS/Linux</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 常见解决方案</span></span><br><span class="line">ollama <span class="built_in">kill</span>                    <span class="comment"># 重启服务</span></span><br><span class="line"><span class="built_in">export</span> OLLAMA_HOST=0.0.0.0     <span class="comment"># 解除访问限制</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-2-显存优化方案"><a href="#6-2-显存优化方案" class="headerlink" title="6.2 显存优化方案"></a>6.2 显存优化方案</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 低显存配置（4GB以下）</span></span><br><span class="line">ollama pull qwen2.5:0.5b  <span class="comment"># 最小化版本</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动参数优化</span></span><br><span class="line">OLLAMA_GPU_LAYER=8 OLLAMA_NUM_GPU=1 ollama run...</span><br></pre></td></tr></table></figure>
+
+<p>通过本方案，您将获得：</p>
+<ul>
+<li>🔒 企业级隐私保护</li>
+<li>🚀 媲美GPT-4的翻译质量</li>
+<li>⚡ 100%离线运行能力</li>
+<li>🎛️ 深度可定制的AI工作流</li>
+</ul>
+<p>立即体验本地大模型翻译的革命性突破！</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Vincent Zhong</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.itvincent.net/2025/02/08/immersive-translate-ollama-qwen25/">https://www.itvincent.net/2025/02/08/immersive-translate-ollama-qwen25/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.itvincent.net">itVincent的博客</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%AC%E5%9C%B0%E5%A4%A7%E6%A8%A1%E5%9E%8B/">本地大模型</a><a class="post-meta__tags" href="/tags/AI%E7%BF%BB%E8%AF%91/">AI翻译</a><a class="post-meta__tags" href="/tags/Ollama%E6%95%99%E7%A8%8B/">Ollama教程</a><a class="post-meta__tags" href="/tags/Qwen2-5/">Qwen2.5</a><a class="post-meta__tags" href="/tags/%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%BF%BB%E8%AF%91/">沉浸式翻译</a><a class="post-meta__tags" href="/tags/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/">隐私保护</a><a class="post-meta__tags" href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96/">浏览器自动化</a><a class="post-meta__tags" href="/tags/%E5%BC%80%E6%BA%90AI%E9%83%A8%E7%BD%B2/">开源AI部署</a></div><div class="addthis_inline_share_toolbox pull-right"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63be68e5419fe69e" async></script><nav id="pagination"><div class="next-post pull-right"><a href="/2024/11/29/github-config-shh/"><span>如何为 GitHub 配置 SSH 密钥</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="disqus_thread"></div><script>var unused = null;
+var disqus_config = function () {
+  this.page.url = 'https://www.itvincent.net/2025/02/08/immersive-translate-ollama-qwen25/';
+  this.page.identifier = '2025/02/08/immersive-translate-ollama-qwen25/';
+  this.page.title = '零成本构建浏览器AI翻译工作站：Ollama+Qwen2.5本地化部署实战指南';
+}
+var d = document, s = d.createElement('script');
+s.src = "https://" + 'itvincent' +".disqus.com/embed.js";
+s.setAttribute('data-timestamp', '' + +new Date());
+(d.head || d.body).appendChild(s);</script><script id="dsq-count-scr" src="https://itvincent.disqus.com/count.js" async></script></div></div><footer class="footer-bg" style="background-image: url(https://tuchuang-1256050518.cos.ap-chengdu.myqcloud.com/picgo/202301091532434.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2016 - 2025 By Vincent Zhong</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script src="/js/katex.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
